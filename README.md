@@ -3,12 +3,23 @@
 빈 디렉토리에 풀어놓기만 하면 Claude Code 개발환경이 통째로 선다. `claude init`을 종합 개발판으로 넓힌 부트스트랩 팩이다.
 
 ```bash
-# one-line (레포 클론 후)
+# 릴리스에서 받기 — 반드시 파일로 먼저 받는다 (파이프 금지)
+curl -L -o devkit.tar.gz https://github.com/sw-1ee/devkit-init/releases/latest/download/devkit-init.tar.gz
+tar xzf devkit.tar.gz -C devkit          # 다운로드가 끊겼으면 여기서 에러로 멈춘다
+bash devkit/install.sh ~/my-new-project --domain web --stage pre-pmf
+
+# 레포를 이미 클론했다면
 bash pack/install.sh ~/my-new-project --domain web --stage pre-pmf
 
 # 대화형
 cd ~/my-new-project && bash /path/to/pack/install.sh
 ```
+
+> `curl … | tar xz` 처럼 스트림을 바로 푸는 방식은 쓰지 않는다. 1.5MB 전송이 중간에
+> 끊기면 tar 앞쪽(modes/·install.sh)만 풀리고 뒤쪽 core/ 가 빠진 채 조용히 성공한
+> 것처럼 보인다. 파일로 받아 `tar xzf` 로 풀면 손상 시 tar 가 에러를 낸다.
+> install.sh 도 실행 초입에 core/domains/modes/skills/mcp 존재를 검사해 부분
+> 추출이면 즉시 멈춘다.
 
 Claude Code 세션 안이라면 `/devkit init` 스킬이 같은 installer를 대화형으로 감싼다. 기존 저장소라면 파일 흔적을 보고 도메인을 추천한다 — `pubspec.yaml`이 보이면 mobile, `package.json`에 next가 있으면 web 하는 식이다.
 

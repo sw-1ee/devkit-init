@@ -20,6 +20,23 @@ set -euo pipefail
 
 KIT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# ---------------------------------------------- preflight: 팩 무결성
+# 부분 추출(대개 'curl … | tar xz' 파이프 중단) 감지. core/ 는 tar 뒤쪽이라
+# 스트림이 끊기면 앞쪽 modes/·install.sh 만 풀리고 core 가 빠진다.
+_missing=""
+for _d in core domains modes skills mcp; do
+  [ -d "$KIT_DIR/$_d" ] || _missing="$_missing $_d"
+done
+if [ -n "$_missing" ]; then
+  echo "ERROR: 불완전한 팩 — 누락 디렉토리:$_missing" >&2
+  echo "  대개 'curl … | tar xz' 파이프 중단으로 인한 부분 추출입니다." >&2
+  echo "  tar 를 먼저 파일로 받아 무결성 확인 후 풀어 주세요:" >&2
+  echo "    curl -L -o devkit.tar.gz <release-url>" >&2
+  echo "    tar xzf devkit.tar.gz -C devkit   # 손상 시 tar 가 에러로 멈춤" >&2
+  echo "    bash devkit/install.sh <target> --domain <d> --stage <s>" >&2
+  exit 1
+fi
+
 # ---------------------------------------------------------------- args
 TARGET=""
 DOMAIN=""
