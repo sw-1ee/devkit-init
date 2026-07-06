@@ -1,0 +1,42 @@
+{
+  "_README": "devkit-init domain selector. Each domain maps to a harness team seed carried in domains/<domain>/team/.claude/. Source of truth for the 100-team catalog: dev-tools templates/converted/index.json; this file is the curated domain view shipped with the pack.",
+  "lang": "ko",
+  "domains": {
+    "web": {
+      "team": "16-fullstack-webapp",
+      "title": "Fullstack Web App",
+      "description": "풀스택 웹앱: 요구사항→설계→프론트→백엔드→테스트→배포. React/Next.js + API + DB.",
+      "roles": ["architect", "frontend-dev", "backend-dev", "qa-engineer", "devops-engineer"],
+      "optional_teams": ["18-api-designer", "19-frontend-specialist"]
+    },
+    "ai": {
+      "team": "41-llm-app-builder",
+      "title": "LLM App Builder",
+      "description": "LLM 애플리케이션: 프롬프트 설계→RAG→에이전트→평가→배포.",
+      "optional_teams": ["31-ml-experiment"]
+    },
+    "mobile": {
+      "team": "17-mobile-app-builder",
+      "title": "Mobile App Builder",
+      "description": "모바일 앱 (범용). Flutter/iOS 네이티브 전용 팀은 아직 없음 — 콘텐츠 백로그.",
+      "caveat": "generic mobile; no dedicated Flutter/iOS-native team yet"
+    },
+    "cli": {
+      "team": "40-cli-tool-builder",
+      "title": "CLI Tool Builder",
+      "description": "CLI 도구: 명령 설계→파서→코어 로직→배포(패키징)."
+    },
+    "data": {
+      "team": "27-data-pipeline",
+      "title": "Data Pipeline",
+      "description": "데이터 파이프라인: 수집→변환→적재→검증→모니터링.",
+      "optional_teams": ["32-data-analysis"]
+    },
+    "_generic": {
+      "team": "_generic",
+      "title": "Generic (fallback)",
+      "description": "최소 3역할 (architect/developer/qa). desktop/exe, Flutter, iOS 등 전용 팀이 없는 도메인의 정직한 fallback.",
+      "covers_gaps": ["desktop-exe", "flutter", "ios-native", "windows"]
+    }
+  }
+}
