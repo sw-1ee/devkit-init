@@ -91,18 +91,27 @@ fi
 mkdir -p "$TARGET/.claude/hooks" "$TARGET/.claude/agents" "$TARGET/.claude/skills" \
          "$TARGET/scripts" "$TARGET/.agents"
 
-# 세션 대화 허브 배선: 서버 전역 허브가 있으면 심링크(프로젝트별 식별),
-# 없으면 로컬 폴더 (외부 환경 이식성). override: DEVKIT_SESSIONS_HUB
-HUB="${DEVKIT_SESSIONS_HUB:-/mnt/volumes/sessions}"
+# 세션 대화 허브 배선 — 허브는 항상 존재한다 (경로 하드코딩 없음).
+# 해석 순서: (1) env DEVKIT_SESSIONS_HUB  (2) ~/.claude/devkit.json 의 sessions_hub
+#            (3) 기본 = ~/.claude/sessions-hub (어느 서버든 존재하는 전역 클로드 폴더)
+# 추후 이관: scripts/adopt-sessions-hub.sh <새경로>
+resolve_hub() {
+  if [ -n "${DEVKIT_SESSIONS_HUB:-}" ]; then echo "$DEVKIT_SESSIONS_HUB"; return; fi
+  local cfg="$HOME/.claude/devkit.json" hub=""
+  if [ -f "$cfg" ]; then
+    hub=$(python3 -c "import json,sys; print(json.load(open(sys.argv[1])).get('sessions_hub',''))" "$cfg" 2>/dev/null || true)
+    [ -n "$hub" ] && { echo "$hub"; return; }
+  fi
+  echo "$HOME/.claude/sessions-hub"
+}
+HUB="$(resolve_hub)"
 if [ ! -e "$TARGET/.agents/sessions" ]; then
-  if [ -d "$HUB" ]; then
-    mkdir -p "$HUB/$(basename "$TARGET")"
+  if mkdir -p "$HUB/$(basename "$TARGET")" 2>/dev/null; then
     ln -s "$HUB/$(basename "$TARGET")" "$TARGET/.agents/sessions"
     echo "  [ok]   .agents/sessions -> sessions hub ($HUB/$(basename "$TARGET"))"
   else
-    mkdir -p "$TARGET/.agents/sessions"
-    echo "  [ok]   .agents/sessions (local — no sessions hub on this machine)"
-    echo "         hub 로 나중에 합치려면: scripts/adopt-sessions-hub.sh 실행"
+    mkdir -p "$TARGET/.agents/sessions"   # 최후 안전망 (HUB 쓰기 불가)
+    echo "  [warn] sessions hub unwritable ($HUB) — local fallback; fix then run scripts/adopt-sessions-hub.sh"
   fi
 fi
 

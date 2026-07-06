@@ -32,10 +32,12 @@ target/
 ├── MEMORY.md              # 세션 간 기억 색인
 ├── .mcp.json.template     # MCP 등록 템플릿 (v1 서버 미번들)
 ├── scripts/extract-session.sh + stitch-timeline.py
-├── .agents/sessions/      # 대화 로그 — 서버에 전역 허브(/mnt/volumes/sessions)가
-│                          #   있으면 자동 심링크(프로젝트별 식별), 없으면 로컬.
+├── .agents/sessions/      # → 세션 허브 심링크 (허브는 항상 존재, 경로 하드코딩 없음)
+│                          #   해석: env DEVKIT_SESSIONS_HUB > ~/.claude/devkit.json
+│                          #         > 기본 ~/.claude/sessions-hub (자동 생성)
 │                          #   timeline.md = 전 세션 발화 시간순 연속 통합본
-│                          #   (터미널 바뀌어도 대화 흐름 이어짐, 크래시도 recover가 복구)
+│                          #   (터미널 교체·크래시에도 대화 흐름 이어짐)
+│                          #   허브 이관 = scripts/adopt-sessions-hub.sh <새경로> (영속 포함)
 └── .claude/
     ├── settings.json      # hooks 배선 (기존 파일엔 idempotent merge)
     ├── hooks/             # 세션 연속성 3계층 (Stop/SessionStart/UserPromptSubmit)
