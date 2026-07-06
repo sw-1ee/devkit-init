@@ -2,26 +2,58 @@
 
 빈 디렉토리에 풀어놓기만 하면 Claude Code 개발환경이 통째로 선다. `claude init`을 종합 개발판으로 넓힌 부트스트랩 팩이다.
 
+## 설치
+
+설치 경로는 세 가지다.
+
+### 1. 릴리스에서 받기 (권장)
+
+tarball을 파일로 먼저 받은 뒤에 푼다.
+
 ```bash
-# 릴리스에서 받기 — 반드시 파일로 먼저 받는다 (파이프 금지)
 curl -L -o devkit.tar.gz https://github.com/sw-1ee/devkit-init/releases/latest/download/devkit-init.tar.gz
-tar xzf devkit.tar.gz -C devkit          # 다운로드가 끊겼으면 여기서 에러로 멈춘다
-bash devkit/install.sh ~/my-new-project --domain web --stage pre-pmf
-
-# 레포를 이미 클론했다면
-bash pack/install.sh ~/my-new-project --domain web --stage pre-pmf
-
-# 대화형
-cd ~/my-new-project && bash /path/to/pack/install.sh
+tar xzf devkit.tar.gz -C devkit
+bash devkit/install.sh ~/my-project --domain web --stage pre-pmf
 ```
 
-> `curl … | tar xz` 처럼 스트림을 바로 푸는 방식은 쓰지 않는다. 1.5MB 전송이 중간에
-> 끊기면 tar 앞쪽(modes/·install.sh)만 풀리고 뒤쪽 core/ 가 빠진 채 조용히 성공한
-> 것처럼 보인다. 파일로 받아 `tar xzf` 로 풀면 손상 시 tar 가 에러를 낸다.
-> install.sh 도 실행 초입에 core/domains/modes/skills/mcp 존재를 검사해 부분
-> 추출이면 즉시 멈춘다.
+`curl … | tar xz`처럼 받은 스트림을 곧바로 푸는 방식은 피한다. 1.5MB 전송이 중간에 끊기면 tar 앞쪽만 풀려서 core/가 빠진 채로 성공한 것처럼 보이기 때문이다. 파일로 받아 `tar xzf`로 풀면 도중에 끊긴 파일은 tar가 에러로 걸러낸다.
 
-Claude Code 세션 안이라면 `/devkit init` 스킬이 같은 installer를 대화형으로 감싼다. 기존 저장소라면 파일 흔적을 보고 도메인을 추천한다 — `pubspec.yaml`이 보이면 mobile, `package.json`에 next가 있으면 web 하는 식이다.
+### 2. 저장소를 이미 클론했다면
+
+```bash
+bash pack/install.sh ~/my-project --domain web --stage pre-pmf
+```
+
+### 3. Claude Code 세션 안에서
+
+`/devkit init` 스킬이 같은 installer를 대화형으로 감싼다. 기존 저장소라면 파일 흔적으로 도메인을 추천한다. `pubspec.yaml`이 보이면 mobile, `package.json`에 next가 있으면 web 하는 식이다.
+
+### install.sh 인자
+
+| 인자 | 뜻 | 값 |
+|---|---|---|
+| `<target>` | 설치할 프로젝트 디렉토리 | 경로. 없으면 만들고, 생략하면 현재 위치 |
+| `--domain` | 무엇을 만드나 | web / ai / mobile / cli / data / `_generic` |
+| `--stage` | 제품 성숙도 (mode 프리셋) | pre-pmf / growing / mature |
+| `--mode` | 단일 원형 (`--stage` 대신) | prototyper / builder / sweeper / grower / maintainer |
+| `--lang` | 하네스 팀 언어 | ko (기본) / en |
+| `--force` | 기존 CLAUDE.md가 있어도 진행 | 플래그 |
+
+인자를 생략하면 도메인과 단계를 대화형으로 묻는다.
+
+### 실행하면 일어나는 일
+
+1. **팩 무결성 검사** — core/domains/modes/skills/mcp가 다 있는지 본다. 부분 추출이면 여기서 멈춘다.
+2. **core 설치** — 세션 연속성 엔진 (hooks, extract-session, verifier, 차터 템플릿).
+3. **domain seed** — 고른 도메인의 하네스 팀 5역할을 `.claude/agents/`에 편다.
+4. **mode 프로파일** — 원형 규칙을 CLAUDE.md에 주입하고, 그 원형이 쓰는 스킬 카테고리만 설치한다.
+5. **조립** — CLAUDE.md를 core + domain + mode로 합치고, settings.json의 hooks를 병합한다.
+
+파일마다 `[ok]` / `[skip]` / `[merged]`로 로그가 찍힌다. 이미 있는 파일은 건드리지 않는다.
+
+### 설치가 끝나면
+
+타겟 디렉토리에서 Claude Code 세션을 새로 시작한다. 첫 턴에 CLAUDE.md의 `Current State`를 채워두면 다음 세션이 그 맥락을 이어받는다.
 
 ## 두 개의 축
 
@@ -31,7 +63,7 @@ Claude Code 세션 안이라면 `/devkit init` 스킬이 같은 installer를 대
 | **mode** | 어떻게 일하나 (원형) | prototyper / builder / sweeper / grower / maintainer |
 | **stage** | (mode 프리셋) 제품 성숙도 | pre-pmf(1+2+3) / growing(2+3+4+5) / mature(3+4+5+2) |
 
-같은 web 프로젝트라도 prototyper와 maintainer는 전혀 다른 환경을 받는다. 전자는 게이트를 느슨하게 풀어 발산을 부추기고, 후자는 가장 엄격한 게이트로 보존을 우선한다. 원형은 직무나 도메인에 매이지 않는 별개의 축이다.
+같은 web 프로젝트라도 prototyper와 maintainer는 전혀 다른 환경을 받는다. prototyper는 게이트를 느슨하게 풀어 발산을 부추기고, maintainer는 가장 엄격한 게이트로 보존을 우선한다. 원형은 직무나 도메인에 매이지 않는 별개의 축이다.
 
 ## 설치되는 것
 
@@ -54,7 +86,7 @@ target/
     └── skills/            # 팀 플레이북 + mode 가 고른 카테고리 번들
 ```
 
-이 팩의 중심은 세션 연속성이다. Claude Code가 남기는 JSONL을 ground truth 삼아 conversation_log.md를 자동 파생하고, 끊긴 세션은 다음 시작 때 복구하며, 마무리 시점에는 체크리스트를 주입한다. 도메인 팀과 원형 프로파일은 그 위에 얹힌다.
+이 팩의 중심은 세션 연속성이다. Claude Code가 남기는 JSONL을 ground truth 삼아 conversation_log.md를 자동으로 파생한다. 끊긴 세션은 다음 시작 때 복구하고, 마무리 시점에는 체크리스트를 주입한다. 도메인 팀과 원형 프로파일은 그 위에 얹힌다.
 
 ## 아직 안 되는 것 (v1)
 
