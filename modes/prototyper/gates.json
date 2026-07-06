@@ -1,0 +1,10 @@
+{
+  "archetype": "prototyper",
+  "test_gate": "smoke-only",
+  "type_strictness": "relaxed",
+  "autonomy": "high",
+  "anti_slop": "relaxed",
+  "verify_attitude": "one-happy-path-pass",
+  "hard_lines": ["no-hardcoded-secrets", "no-destructive-commands"],
+  "exit_criteria": "idea validated -> switch to builder; do not promote prototype code"
+}

@@ -1,0 +1,7 @@
+{
+  "preset": "mature",
+  "description": "강한 PMF, 성숙 시스템. 지키면서 다듬고 키운다. 새 구축은 예외적.",
+  "archetypes": ["sweeper", "grower", "maintainer", "builder:light"],
+  "dominant": "maintainer",
+  "notes": "maintainer 게이트가 기본 자세. 신규 기능은 builder 규율로 격리 구축 후 편입."
+}

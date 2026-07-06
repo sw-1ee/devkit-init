@@ -162,12 +162,14 @@ elif [ "$MODE_LABEL" != "none" ]; then
   echo "── mode/stage '$MODE_LABEL' — not wired in this pack build (skipping) ──"
 fi
 
-# skill category bundles selected by mode (dedup)
+# skill category bundles selected by mode (dedup).
+# NOTE: categories are pack-side organization only — Claude Code discovers skills
+# at .claude/skills/<name>/SKILL.md (one level), so we FLATTEN on install.
 if [ -n "$MODE_SKILL_CATS" ]; then
   for cat in $(echo "$MODE_SKILL_CATS" | tr ' ' '\n' | sort -u); do
     [ -d "$KIT_DIR/skills/$cat" ] || continue
     while IFS= read -r -d '' sk; do
-      rel="${sk#$KIT_DIR/skills/}"
+      rel="${sk#$KIT_DIR/skills/$cat/}"
       install_file "$sk" "$TARGET/.claude/skills/$rel"
     done < <(find "$KIT_DIR/skills/$cat" -type f -print0)
   done

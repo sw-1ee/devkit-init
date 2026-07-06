@@ -1,0 +1,7 @@
+{
+  "preset": "pre-pmf",
+  "description": "새 제품, PMF 이전. 아이디어 검증과 빠른 구축이 지배. 무겁게 지키지 않는다.",
+  "archetypes": ["prototyper", "builder", "sweeper:light"],
+  "dominant": "prototyper",
+  "notes": "prototyper 규칙이 기본 자세. 살리기로 한 코드에만 builder 게이트. sweeper 는 주기적 가지치기만."
+}

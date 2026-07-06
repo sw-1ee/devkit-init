@@ -1,0 +1,10 @@
+{
+  "archetype": "grower",
+  "test_gate": "green-preserved",
+  "type_strictness": "strict",
+  "autonomy": "medium",
+  "anti_slop": "standard",
+  "verify_attitude": "before-after-metrics-required",
+  "hard_lines": ["no-improvement-claim-without-metrics", "reversible-changes-only", "instrument-before-optimize"],
+  "exit_criteria": "PMF strong + stable -> maintainer weight increases"
+}

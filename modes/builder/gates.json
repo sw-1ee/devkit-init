@@ -1,0 +1,10 @@
+{
+  "archetype": "builder",
+  "test_gate": "tdd-required",
+  "type_strictness": "strict",
+  "autonomy": "medium",
+  "anti_slop": "standard",
+  "verify_attitude": "tests-types-build-all-green",
+  "hard_lines": ["no-untested-features", "no-suppressed-errors", "plan-before-multistep"],
+  "exit_criteria": "feature-complete + stable -> sweeper for consolidation"
+}

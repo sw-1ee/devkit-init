@@ -1,0 +1,15 @@
+{
+  "_README": "devkit-init mode axis — how you work (archetype), orthogonal to domain. Each archetype dir: CLAUDE.mode.md (charter rules injected into target CLAUDE.md) + skills.list (skill category bundles to install) + gates.json (machine-readable gate parameters). Presets combine archetypes by product maturity; ':light' suffix = secondary weight (rules still injected, gates advisory).",
+  "archetypes": {
+    "prototyper": "발산·탐색 — 속도>완성도, 게이트 느슨, 코드는 버릴 수 있다",
+    "builder": "프로토→프로덕션 — TDD, 계획 먼저, 전 게이트 GREEN",
+    "sweeper": "정리·단순화·성능 — 동작 불변 계약, 삭제가 최고의 diff",
+    "grower": "PMF 반복개선 — 측정 없이 개선 없음, 되돌릴 수 있는 실험",
+    "maintainer": "보존·안정·확장 — 롤백 경로 필수, 최엄격 게이트, 자율성 낮음"
+  },
+  "presets": {
+    "pre-pmf": "prototyper + builder + sweeper:light — 새 제품",
+    "growing": "builder + sweeper + grower + maintainer:light — 성장 중",
+    "mature": "sweeper + grower + maintainer + builder:light — 성숙"
+  }
+}

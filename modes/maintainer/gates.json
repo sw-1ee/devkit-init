@@ -1,0 +1,10 @@
+{
+  "archetype": "maintainer",
+  "test_gate": "full-plus-regression",
+  "type_strictness": "strict",
+  "autonomy": "low",
+  "anti_slop": "strict",
+  "verify_attitude": "strictest-all-gates-plus-security-plus-rollback",
+  "hard_lines": ["rollback-path-before-change", "one-regression-test-per-fix", "no-unreviewed-dependency-major", "report-before-schema-or-surface-change"],
+  "exit_criteria": "steady state — this is the long game"
+}

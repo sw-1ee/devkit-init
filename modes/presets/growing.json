@@ -1,0 +1,7 @@
+{
+  "preset": "growing",
+  "description": "PMF 찾음, 성장 중. 짓고-다듬고-키운다. 안정성 비중이 올라가기 시작.",
+  "archetypes": ["builder", "sweeper", "grower", "maintainer:light"],
+  "dominant": "builder",
+  "notes": "builder 게이트가 기본. 개선은 grower 의 측정 규율. 코어 경로엔 maintainer 의 롤백 사고 적용."
+}
