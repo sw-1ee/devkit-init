@@ -89,7 +89,20 @@ if [ -f "$TARGET/CLAUDE.md" ] && [ "$FORCE" -ne 1 ]; then
 fi
 
 mkdir -p "$TARGET/.claude/hooks" "$TARGET/.claude/agents" "$TARGET/.claude/skills" \
-         "$TARGET/scripts" "$TARGET/.agents/sessions"
+         "$TARGET/scripts" "$TARGET/.agents"
+
+# 세션 대화 허브 배선: 서버 전역 허브가 있으면 심링크(프로젝트별 식별),
+# 없으면 로컬 폴더 (외부 환경 이식성). override: DEVKIT_SESSIONS_HUB
+HUB="${DEVKIT_SESSIONS_HUB:-/mnt/volumes/sessions}"
+if [ ! -e "$TARGET/.agents/sessions" ]; then
+  if [ -d "$HUB" ]; then
+    mkdir -p "$HUB/$(basename "$TARGET")"
+    ln -s "$HUB/$(basename "$TARGET")" "$TARGET/.agents/sessions"
+    echo "  [ok]   .agents/sessions -> sessions hub ($HUB/$(basename "$TARGET"))"
+  else
+    mkdir -p "$TARGET/.agents/sessions"
+  fi
+fi
 
 copied=0; skipped=0
 install_file() { # $1 src, $2 dst, $3 executable(0/1)

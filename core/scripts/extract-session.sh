@@ -119,6 +119,7 @@ lines.append("- **ai_provider**: claude")
 topic_short = first_user_msg[:50] if first_user_msg else "unknown"
 lines.append(f"- **topic**: {topic_short}")
 lines.append(f"- **source**: JSONL auto-extract")
+lines.append(f"- **project**: {Path(sys.argv[4]).name}")
 lines.append("")
 lines.append("---")
 lines.append("")
