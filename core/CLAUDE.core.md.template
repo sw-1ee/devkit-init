@@ -10,9 +10,10 @@ making suggestions. Keep responses grounded in what is written here.
 매 세션 첫 턴에 반드시 실행:
 
 1. 이 파일의 `## Current State` 섹션 읽기 — 직전 세션 맥락 파악
-2. 이전 세션 회복 — 아래 중 택 1:
-   - `scripts/extract-session.sh` 출력 읽기 (JSONL 기반, 권장)
-   - 최근 `.agents/sessions/<topic>/conversation_log.md` 읽기
+2. 이전 세션 회복 — **`.agents/sessions/timeline.md` tail 읽기 (권장)**:
+   전 세션이 발화 시간순으로 이어진 연속 통합본. 직전 터미널이 언제 꺼졌든
+   그 지점부터 대화 흐름이 그대로 이어진다. (개별 세션 원본 =
+   `.agents/sessions/<topic>/conversation_log.md`, ground truth = JSONL)
 
 이 절차를 건너뛰면 이전 맥락 유실됨. **절대 생략 금지.**
 

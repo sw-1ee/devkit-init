@@ -28,6 +28,6 @@ if [ -n "$session_id" ]; then
 fi
 
 # 백그라운드 실행. extract-session.sh 가 default 로 가장 최근 JSONL 사용.
-( bash "$PROJ_DIR/scripts/extract-session.sh" ${jsonl:+"$jsonl"} >/dev/null 2>&1 ) &
+( bash "$PROJ_DIR/scripts/extract-session.sh" ${jsonl:+"$jsonl"} >/dev/null 2>&1; python3 "$PROJ_DIR/scripts/stitch-timeline.py" >/dev/null 2>&1 ) &
 
 exit 0
