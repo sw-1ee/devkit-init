@@ -1,0 +1,13 @@
+{
+  "_README": "MCP 서버 등록 템플릿. devkit-init v1 은 서버를 번들하지 않는다 (프로젝트당 <10 서버, <80 활성 도구 권장). 필요한 서버만 아래 예시 형식으로 mcpServers 에 추가하고 이 파일을 .mcp.json 으로 저장.",
+  "_example": {
+    "mcpServers": {
+      "my-server": {
+        "command": "npx",
+        "args": ["-y", "@example/mcp-server"],
+        "env": { "API_KEY": "${MY_API_KEY}" }
+      }
+    }
+  },
+  "mcpServers": {}
+}

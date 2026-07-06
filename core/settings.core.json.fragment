@@ -1,0 +1,43 @@
+{
+  "_README": "이 블록을 동료 프로젝트의 .claude/settings.json 의 'hooks' 키 아래에 merge 하세요. 이미 hooks 가 있으면 배열을 합치세요. ${CLAUDE_PROJECT_DIR} 는 Claude Code 가 자동 주입하는 환경변수입니다.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/auto-extract-session.sh"
+          },
+          {
+            "type": "command",
+            "command": "cd ${CLAUDE_PROJECT_DIR} && dirty=$(git status --short 2>/dev/null | wc -l); if [ \"$dirty\" -gt 0 ]; then echo \"SESSION END CHECK: $dirty uncommitted file(s). Run 'git status' and decide: commit now or explicitly defer as WIP.\"; fi"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"[CLAUDE.md 세션 시작 필수 절차] 아직 안 했으면 지금 순서대로: (1) CLAUDE.md ## Current State 읽기 (2) scripts/extract-session.sh 실행 또는 최근 conversation_log.md 읽기. 스킵 금지.\"}}'"
+          },
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/session-start-recover.sh"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/session-end-reminder.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
