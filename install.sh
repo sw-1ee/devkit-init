@@ -101,6 +101,8 @@ if [ ! -e "$TARGET/.agents/sessions" ]; then
     echo "  [ok]   .agents/sessions -> sessions hub ($HUB/$(basename "$TARGET"))"
   else
     mkdir -p "$TARGET/.agents/sessions"
+    echo "  [ok]   .agents/sessions (local — no sessions hub on this machine)"
+    echo "         hub 로 나중에 합치려면: scripts/adopt-sessions-hub.sh 실행"
   fi
 fi
 

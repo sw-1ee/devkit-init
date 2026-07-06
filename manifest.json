@@ -20,29 +20,82 @@
       "core/hooks/session-end-reminder.sh",
       "core/scripts/extract-session.sh",
       "core/scripts/stitch-timeline.py",
+      "core/scripts/adopt-sessions-hub.sh",
       "core/agents/verifier.md",
       "core/MEMORY.md.template"
     ]
   },
   "domains": {
-    "web": { "team": "16-fullstack-webapp", "optional_teams": ["18-api-designer", "19-frontend-specialist"] },
-    "ai": { "team": "41-llm-app-builder", "optional_teams": ["31-ml-experiment"] },
-    "mobile": { "team": "17-mobile-app-builder", "note": "generic mobile; no dedicated Flutter/iOS team yet" },
-    "cli": { "team": "40-cli-tool-builder" },
-    "data": { "team": "27-data-pipeline", "optional_teams": ["32-data-analysis"] },
-    "_generic": { "team": null, "note": "minimal architect+dev+qa fallback; covers desktop/exe gap honestly" }
+    "web": {
+      "team": "16-fullstack-webapp",
+      "optional_teams": [
+        "18-api-designer",
+        "19-frontend-specialist"
+      ]
+    },
+    "ai": {
+      "team": "41-llm-app-builder",
+      "optional_teams": [
+        "31-ml-experiment"
+      ]
+    },
+    "mobile": {
+      "team": "17-mobile-app-builder",
+      "note": "generic mobile; no dedicated Flutter/iOS team yet"
+    },
+    "cli": {
+      "team": "40-cli-tool-builder"
+    },
+    "data": {
+      "team": "27-data-pipeline",
+      "optional_teams": [
+        "32-data-analysis"
+      ]
+    },
+    "_generic": {
+      "team": null,
+      "note": "minimal architect+dev+qa fallback; covers desktop/exe gap honestly"
+    }
   },
   "modes": {
-    "archetypes": ["prototyper", "builder", "sweeper", "grower", "maintainer"],
+    "archetypes": [
+      "prototyper",
+      "builder",
+      "sweeper",
+      "grower",
+      "maintainer"
+    ],
     "presets": {
-      "pre-pmf": ["prototyper", "builder", "sweeper"],
-      "growing": ["builder", "sweeper", "grower", "maintainer:light"],
-      "mature": ["sweeper", "grower", "maintainer", "builder:light"]
+      "pre-pmf": [
+        "prototyper",
+        "builder",
+        "sweeper"
+      ],
+      "growing": [
+        "builder",
+        "sweeper",
+        "grower",
+        "maintainer:light"
+      ],
+      "mature": [
+        "sweeper",
+        "grower",
+        "maintainer",
+        "builder:light"
+      ]
     }
   },
   "skills_categories": [
-    "agent-llm", "debug", "security", "frontend", "testing",
-    "refactor", "docs", "data", "git-ops", "diagram"
+    "agent-llm",
+    "debug",
+    "security",
+    "frontend",
+    "testing",
+    "refactor",
+    "docs",
+    "data",
+    "git-ops",
+    "diagram"
   ],
   "v1_scope": {
     "run_sh_autonomous_loop": "deferred — known-unreliable (ScheduleWakeup wake-death unresolved); post-v1 optional module",
@@ -59,14 +112,36 @@
     "external_data": {
       "policy": "MIT/Apache only; unknown-license sources excluded and rewritten natively",
       "sources": [
-        { "repo": "nextlevelbuilder/ui-ux-pro-max-skill", "license": "MIT", "assets": "16 CSV: industry rules/palettes/UX/typography/charts/styles" },
-        { "repo": "VoltAgent/awesome-design-md", "license": "MIT", "assets": "73 brand DESIGN.md" },
-        { "repo": "Nutlope/hallmark", "license": "MIT", "assets": "20 themes / 57 slop gates" },
-        { "repo": "pbakaus/impeccable", "license": "Apache-2.0", "assets": "45 detector rules / 23 commands" }
+        {
+          "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "license": "MIT",
+          "assets": "16 CSV: industry rules/palettes/UX/typography/charts/styles"
+        },
+        {
+          "repo": "VoltAgent/awesome-design-md",
+          "license": "MIT",
+          "assets": "73 brand DESIGN.md"
+        },
+        {
+          "repo": "Nutlope/hallmark",
+          "license": "MIT",
+          "assets": "20 themes / 57 slop gates"
+        },
+        {
+          "repo": "pbakaus/impeccable",
+          "license": "Apache-2.0",
+          "assets": "45 detector rules / 23 commands"
+        }
       ],
       "excluded": [
-        { "repo": "phrazzld design-tokens", "reason": "404/unknown license — brand-hue.css rewritten natively" },
-        { "repo": "transitions.dev", "reason": "unknown license — motion.css rewritten natively" }
+        {
+          "repo": "phrazzld design-tokens",
+          "reason": "404/unknown license — brand-hue.css rewritten natively"
+        },
+        {
+          "repo": "transitions.dev",
+          "reason": "unknown license — motion.css rewritten natively"
+        }
       ]
     }
   }
