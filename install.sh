@@ -171,7 +171,7 @@ if [ -n "$MODE_SKILL_CATS" ]; then
     while IFS= read -r -d '' sk; do
       rel="${sk#$KIT_DIR/skills/$cat/}"
       install_file "$sk" "$TARGET/.claude/skills/$rel"
-    done < <(find "$KIT_DIR/skills/$cat" -type f -print0)
+    done < <(find "$KIT_DIR/skills/$cat" -type f -not -path "*/_raw/*" -not -path "*/sessions/*" -print0)
   done
 fi
 
