@@ -1,0 +1,67 @@
+/* brand-hue.css — 단일 hue 변수에서 전체 팔레트를 도출하는 OKLCH 토큰 시스템.
+ * devkit-init 자체 작성 (native). 아이디어 계보: "단일 브랜드 hue → OKLCH 파생"
+ * 패턴은 커뮤니티에 널리 알려진 기법이며 코드는 여기서 새로 작성함.
+ *
+ * 사용: :root 의 --brand-hue 하나만 브랜드에 맞게 바꾸면
+ * primary/surface/text 계열이 지각적으로 균일하게 따라온다.
+ * OKLCH = oklch(<lightness 0-1> <chroma 0-0.4> <hue 0-360>) */
+
+:root {
+  --brand-hue: 250; /* ← 이 값 하나만 바꾼다 (250=blue, 160=green, 25=orange…) */
+
+  /* 브랜드 계열 — 같은 hue, lightness/chroma 만 단계화 */
+  --brand:            oklch(0.58 0.19 var(--brand-hue));
+  --brand-strong:     oklch(0.48 0.21 var(--brand-hue));
+  --brand-soft:       oklch(0.72 0.13 var(--brand-hue));
+  --brand-subtle:     oklch(0.94 0.03 var(--brand-hue));
+  --on-brand:         oklch(0.99 0.01 var(--brand-hue));
+
+  /* 서피스 계열 — 극저채도로 hue 기운만 남김 (무채색보다 살아있는 중립) */
+  --surface:          oklch(0.985 0.004 var(--brand-hue));
+  --surface-raised:   oklch(1 0 0);
+  --surface-sunken:   oklch(0.955 0.006 var(--brand-hue));
+  --border:           oklch(0.90 0.010 var(--brand-hue));
+  --border-strong:    oklch(0.80 0.015 var(--brand-hue));
+
+  /* 텍스트 계열 */
+  --text:             oklch(0.25 0.015 var(--brand-hue));
+  --text-muted:       oklch(0.50 0.020 var(--brand-hue));
+  --text-faint:       oklch(0.65 0.015 var(--brand-hue));
+
+  /* 시맨틱 — hue 고정 (브랜드와 독립) */
+  --danger:           oklch(0.55 0.20 25);
+  --on-danger:        oklch(0.99 0.01 25);
+  --warn:             oklch(0.75 0.15 85);
+  --ok:               oklch(0.60 0.15 155);
+
+  --ring:             oklch(0.58 0.19 var(--brand-hue) / 0.45);
+}
+
+/* 다크 모드 — lightness 축만 반전, hue/chroma 관계는 유지 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand:          oklch(0.70 0.16 var(--brand-hue));
+    --brand-strong:   oklch(0.78 0.14 var(--brand-hue));
+    --brand-soft:     oklch(0.55 0.15 var(--brand-hue));
+    --brand-subtle:   oklch(0.28 0.04 var(--brand-hue));
+    --on-brand:       oklch(0.15 0.02 var(--brand-hue));
+
+    --surface:        oklch(0.185 0.008 var(--brand-hue));
+    --surface-raised: oklch(0.23 0.010 var(--brand-hue));
+    --surface-sunken: oklch(0.15 0.006 var(--brand-hue));
+    --border:         oklch(0.32 0.012 var(--brand-hue));
+    --border-strong:  oklch(0.42 0.015 var(--brand-hue));
+
+    --text:           oklch(0.93 0.008 var(--brand-hue));
+    --text-muted:     oklch(0.70 0.015 var(--brand-hue));
+    --text-faint:     oklch(0.55 0.012 var(--brand-hue));
+  }
+}
+
+/* Tailwind v4 @theme 브릿지 (사용 시 주석 해제)
+@theme {
+  --color-brand: var(--brand);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+}
+*/

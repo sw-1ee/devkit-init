@@ -1,0 +1,446 @@
+[
+  {
+    "slug": "airbnb",
+    "title": "---",
+    "file": "design-systems/airbnb/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "airtable",
+    "title": "---",
+    "file": "design-systems/airtable/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "apple",
+    "title": "---",
+    "file": "design-systems/apple/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "binance",
+    "title": "---",
+    "file": "design-systems/binance/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "bmw",
+    "title": "---",
+    "file": "design-systems/bmw/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "bmw-m",
+    "title": "---",
+    "file": "design-systems/bmw-m/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "bugatti",
+    "title": "---",
+    "file": "design-systems/bugatti/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "cal",
+    "title": "---",
+    "file": "design-systems/cal/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "claude",
+    "title": "---",
+    "file": "design-systems/claude/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "clay",
+    "title": "---",
+    "file": "design-systems/clay/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "clickhouse",
+    "title": "---",
+    "file": "design-systems/clickhouse/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "cohere",
+    "title": "---",
+    "file": "design-systems/cohere/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "coinbase",
+    "title": "---",
+    "file": "design-systems/coinbase/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "composio",
+    "title": "---",
+    "file": "design-systems/composio/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "cursor",
+    "title": "---",
+    "file": "design-systems/cursor/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "dell-1996",
+    "title": "---",
+    "file": "design-systems/dell-1996/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "elevenlabs",
+    "title": "---",
+    "file": "design-systems/elevenlabs/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "expo",
+    "title": "---",
+    "file": "design-systems/expo/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "ferrari",
+    "title": "---",
+    "file": "design-systems/ferrari/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "figma",
+    "title": "---",
+    "file": "design-systems/figma/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "framer",
+    "title": "---",
+    "file": "design-systems/framer/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "hashicorp",
+    "title": "---",
+    "file": "design-systems/hashicorp/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "hp",
+    "title": "---",
+    "file": "design-systems/hp/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "ibm",
+    "title": "---",
+    "file": "design-systems/ibm/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "intercom",
+    "title": "---",
+    "file": "design-systems/intercom/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "kraken",
+    "title": "Design System Inspired by Kraken",
+    "file": "design-systems/kraken/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "lamborghini",
+    "title": "Design System Inspired by Lamborghini",
+    "file": "design-systems/lamborghini/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "linear.app",
+    "title": "---",
+    "file": "design-systems/linear.app/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "lovable",
+    "title": "Design System Inspired by Lovable",
+    "file": "design-systems/lovable/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "mastercard",
+    "title": "Design System Inspired by Mastercard",
+    "file": "design-systems/mastercard/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "meta",
+    "title": "---",
+    "file": "design-systems/meta/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "minimax",
+    "title": "---",
+    "file": "design-systems/minimax/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "mintlify",
+    "title": "---",
+    "file": "design-systems/mintlify/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "miro",
+    "title": "---",
+    "file": "design-systems/miro/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "mistral.ai",
+    "title": "---",
+    "file": "design-systems/mistral.ai/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "mongodb",
+    "title": "---",
+    "file": "design-systems/mongodb/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "nike",
+    "title": "---",
+    "file": "design-systems/nike/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "nintendo-2001",
+    "title": "---",
+    "file": "design-systems/nintendo-2001/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "notion",
+    "title": "---",
+    "file": "design-systems/notion/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "nvidia",
+    "title": "---",
+    "file": "design-systems/nvidia/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "ollama",
+    "title": "---",
+    "file": "design-systems/ollama/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "opencode.ai",
+    "title": "---",
+    "file": "design-systems/opencode.ai/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "pinterest",
+    "title": "---",
+    "file": "design-systems/pinterest/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "playstation",
+    "title": "---",
+    "file": "design-systems/playstation/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "posthog",
+    "title": "---",
+    "file": "design-systems/posthog/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "raycast",
+    "title": "---",
+    "file": "design-systems/raycast/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "renault",
+    "title": "---",
+    "file": "design-systems/renault/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "replicate",
+    "title": "---",
+    "file": "design-systems/replicate/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "resend",
+    "title": "---",
+    "file": "design-systems/resend/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "revolut",
+    "title": "---",
+    "file": "design-systems/revolut/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "runwayml",
+    "title": "Design System Inspired by Runway",
+    "file": "design-systems/runwayml/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "sanity",
+    "title": "Design System Inspired by Sanity",
+    "file": "design-systems/sanity/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "sentry",
+    "title": "---",
+    "file": "design-systems/sentry/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "shopify",
+    "title": "---",
+    "file": "design-systems/shopify/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "slack",
+    "title": "---",
+    "file": "design-systems/slack/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "spacex",
+    "title": "---",
+    "file": "design-systems/spacex/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "spotify",
+    "title": "Design System Inspired by Spotify",
+    "file": "design-systems/spotify/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "starbucks",
+    "title": "Design System Inspired by Starbucks",
+    "file": "design-systems/starbucks/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "stripe",
+    "title": "---",
+    "file": "design-systems/stripe/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "supabase",
+    "title": "---",
+    "file": "design-systems/supabase/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "superhuman",
+    "title": "---",
+    "file": "design-systems/superhuman/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "tesla",
+    "title": "Design System Inspired by Tesla",
+    "file": "design-systems/tesla/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "theverge",
+    "title": "Design System Inspired by The Verge",
+    "file": "design-systems/theverge/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "together.ai",
+    "title": "---",
+    "file": "design-systems/together.ai/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "uber",
+    "title": "---",
+    "file": "design-systems/uber/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "vercel",
+    "title": "---",
+    "file": "design-systems/vercel/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "vodafone",
+    "title": "---",
+    "file": "design-systems/vodafone/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "voltagent",
+    "title": "---",
+    "file": "design-systems/voltagent/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "warp",
+    "title": "---",
+    "file": "design-systems/warp/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "webflow",
+    "title": "---",
+    "file": "design-systems/webflow/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "wired",
+    "title": "---",
+    "file": "design-systems/wired/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "wise",
+    "title": "---",
+    "file": "design-systems/wise/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "x.ai",
+    "title": "---",
+    "file": "design-systems/x.ai/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  },
+  {
+    "slug": "zapier",
+    "title": "---",
+    "file": "design-systems/zapier/DESIGN.md",
+    "source": "VoltAgent/awesome-design-md"
+  }
+]

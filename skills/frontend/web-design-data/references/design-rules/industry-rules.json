@@ -1,0 +1,4020 @@
+[
+  {
+    "id": 1,
+    "industry": "SaaS (General)",
+    "pattern": "Hero + Features + CTA",
+    "style_priority": [
+      "Glassmorphism",
+      "Flat Design"
+    ],
+    "color_mood": "Trust blue + Accent contrast",
+    "typography_mood": "Professional + Hierarchy",
+    "effects": [
+      "Subtle hover (200-250ms)",
+      "Smooth transitions"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-minimalism",
+      "if_data_heavy": "add-glassmorphism"
+    },
+    "anti_patterns": [
+      "Excessive animation",
+      "Dark mode by default"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 2,
+    "industry": "Micro SaaS",
+    "pattern": "Hero-Centric + Trust",
+    "style_priority": [
+      "Motion-Driven",
+      "Vibrant & Block"
+    ],
+    "color_mood": "Bold primaries + Accent contrast",
+    "typography_mood": "Modern + Energetic typography",
+    "effects": [
+      "Scroll-triggered animations",
+      "Parallax"
+    ],
+    "decision_rules": {
+      "if_pre_launch": "use-waitlist-pattern",
+      "if_video_ready": "add-hero-video"
+    },
+    "anti_patterns": [
+      "Static design",
+      "No video",
+      "Poor mobile"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 3,
+    "industry": "E-commerce",
+    "pattern": "Feature-Rich Showcase",
+    "style_priority": [
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Brand primary + Success green",
+    "typography_mood": "Engaging + Clear hierarchy",
+    "effects": [
+      "Card hover lift (200ms)",
+      "Scale effect"
+    ],
+    "decision_rules": {
+      "if_luxury": "switch-to-liquid-glass",
+      "if_conversion_focused": "add-urgency-colors"
+    },
+    "anti_patterns": [
+      "Flat design without depth",
+      "Text-heavy pages"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 4,
+    "industry": "E-commerce Luxury",
+    "pattern": "Feature-Rich Showcase",
+    "style_priority": [
+      "Liquid Glass",
+      "Glassmorphism"
+    ],
+    "color_mood": "Premium colors + Minimal accent",
+    "typography_mood": "Elegant + Refined typography",
+    "effects": [
+      "Chromatic aberration",
+      "Fluid animations (400-600ms)"
+    ],
+    "decision_rules": {
+      "if_checkout": "emphasize-trust",
+      "if_hero_needed": "use-3d-hyperrealism"
+    },
+    "anti_patterns": [
+      "Vibrant & Block-based",
+      "Playful colors"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 5,
+    "industry": "B2B Service",
+    "pattern": "Feature-Rich Showcase + Trust",
+    "style_priority": [
+      "Trust & Authority",
+      "Minimalism"
+    ],
+    "color_mood": "Professional blue + Neutral grey",
+    "typography_mood": "Formal + Clear typography",
+    "effects": [
+      "Section transitions",
+      "Feature reveals"
+    ],
+    "decision_rules": {
+      "must_have": "roi-messaging"
+    },
+    "anti_patterns": [
+      "Playful design",
+      "Hidden credentials",
+      "AI purple/pink gradients"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 6,
+    "industry": "Financial Dashboard",
+    "pattern": "Data-Dense Dashboard",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Data-Dense"
+    ],
+    "color_mood": "Dark bg + Red/Green alerts + Trust blue",
+    "typography_mood": "Clear + Readable typography",
+    "effects": [
+      "Real-time number animations",
+      "Alert pulse"
+    ],
+    "decision_rules": {
+      "must_have": "high-contrast"
+    },
+    "anti_patterns": [
+      "Light mode default",
+      "Slow rendering"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 7,
+    "industry": "Analytics Dashboard",
+    "pattern": "Data-Dense + Drill-Down",
+    "style_priority": [
+      "Data-Dense",
+      "Heat Map"
+    ],
+    "color_mood": "Cool→Hot gradients + Neutral grey",
+    "typography_mood": "Clear + Functional typography",
+    "effects": [
+      "Hover tooltips",
+      "Chart zoom",
+      "Filter animations"
+    ],
+    "decision_rules": {
+      "must_have": "data-export",
+      "if_large_dataset": "virtualize-lists"
+    },
+    "anti_patterns": [
+      "Ornate design",
+      "No filtering"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 8,
+    "industry": "Healthcare App",
+    "pattern": "Social Proof-Focused",
+    "style_priority": [
+      "Neumorphism",
+      "Accessible & Ethical"
+    ],
+    "color_mood": "Calm blue + Health green",
+    "typography_mood": "Readable + Large type (16px+)",
+    "effects": [
+      "Soft box-shadow",
+      "Smooth press (150ms)"
+    ],
+    "decision_rules": {
+      "must_have": "wcag-aaa-compliance",
+      "if_medication": "red-alert-colors"
+    },
+    "anti_patterns": [
+      "Bright neon colors",
+      "Motion-heavy animations",
+      "AI purple/pink gradients"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 9,
+    "industry": "Educational App",
+    "pattern": "Feature-Rich Showcase",
+    "style_priority": [
+      "Claymorphism",
+      "Micro-interactions"
+    ],
+    "color_mood": "Playful colors + Clear hierarchy",
+    "typography_mood": "Friendly + Engaging typography",
+    "effects": [
+      "Soft press (200ms)",
+      "Fluffy elements"
+    ],
+    "decision_rules": {
+      "if_gamification": "add-progress-animation",
+      "if_children": "increase-playfulness"
+    },
+    "anti_patterns": [
+      "Dark modes",
+      "Complex jargon"
+    ],
+    "severity": "MEDIUM",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 10,
+    "industry": "Creative Agency",
+    "pattern": "Storytelling-Driven",
+    "style_priority": [
+      "Brutalism",
+      "Motion-Driven"
+    ],
+    "color_mood": "Bold primaries + Artistic freedom",
+    "typography_mood": "Bold + Expressive typography",
+    "effects": [
+      "CRT scanlines",
+      "Neon glow",
+      "Glitch effects"
+    ],
+    "decision_rules": {
+      "must_have": "case-studies",
+      "if_boutique": "increase-artistic-freedom"
+    },
+    "anti_patterns": [
+      "Corporate minimalism",
+      "Hidden portfolio"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 11,
+    "industry": "Portfolio/Personal",
+    "pattern": "Storytelling-Driven",
+    "style_priority": [
+      "Motion-Driven",
+      "Minimalism"
+    ],
+    "color_mood": "Brand primary + Artistic",
+    "typography_mood": "Expressive + Variable typography",
+    "effects": [
+      "Parallax (3-5 layers)",
+      "Scroll-triggered reveals"
+    ],
+    "decision_rules": {
+      "if_creative_field": "add-brutalism",
+      "if_minimal_portfolio": "reduce-motion"
+    },
+    "anti_patterns": [
+      "Corporate templates",
+      "Generic layouts"
+    ],
+    "severity": "MEDIUM",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 12,
+    "industry": "Gaming",
+    "pattern": "Feature-Rich Showcase",
+    "style_priority": [
+      "3D & Hyperrealism",
+      "Retro-Futurism"
+    ],
+    "color_mood": "Vibrant + Neon + Immersive",
+    "typography_mood": "Bold + Impactful typography",
+    "effects": [
+      "WebGL 3D rendering",
+      "Glitch effects"
+    ],
+    "decision_rules": {
+      "if_competitive": "add-real-time-stats",
+      "if_casual": "increase-playfulness"
+    },
+    "anti_patterns": [
+      "Minimalist design",
+      "Static assets"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 13,
+    "industry": "Government/Public Service",
+    "pattern": "Minimal & Direct",
+    "style_priority": [
+      "Accessible & Ethical",
+      "Minimalism"
+    ],
+    "color_mood": "Professional blue + High contrast",
+    "typography_mood": "Clear + Large typography",
+    "effects": [
+      "Clear focus rings (3-4px)",
+      "Skip links"
+    ],
+    "decision_rules": {
+      "must_have": "keyboard-navigation"
+    },
+    "anti_patterns": [
+      "Ornate design",
+      "Low contrast",
+      "Motion effects",
+      "AI purple/pink gradients"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 14,
+    "industry": "Fintech/Crypto",
+    "pattern": "Trust & Authority",
+    "style_priority": [
+      "Minimalism",
+      "Accessible & Ethical"
+    ],
+    "color_mood": "Navy + Trust Blue + Gold",
+    "typography_mood": "Professional + Trustworthy",
+    "effects": [
+      "Smooth state transitions",
+      "Number animations"
+    ],
+    "decision_rules": {
+      "must_have": "security-first",
+      "if_dashboard": "use-dark-mode"
+    },
+    "anti_patterns": [
+      "Playful design",
+      "Unclear fees",
+      "AI purple/pink gradients"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 15,
+    "industry": "Social Media App",
+    "pattern": "Feature-Rich Showcase",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Motion-Driven"
+    ],
+    "color_mood": "Vibrant + Engagement colors",
+    "typography_mood": "Modern + Bold typography",
+    "effects": [
+      "Large scroll animations",
+      "Icon animations"
+    ],
+    "decision_rules": {
+      "if_engagement_metric": "add-motion",
+      "if_content_focused": "minimize-chrome"
+    },
+    "anti_patterns": [
+      "Heavy skeuomorphism",
+      "Accessibility ignored"
+    ],
+    "severity": "MEDIUM",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 16,
+    "industry": "Productivity Tool",
+    "pattern": "Interactive Demo + Feature-Rich",
+    "style_priority": [
+      "Flat Design",
+      "Micro-interactions"
+    ],
+    "color_mood": "Clear hierarchy + Functional colors",
+    "typography_mood": "Clean + Efficient typography",
+    "effects": [
+      "Quick actions (150ms)",
+      "Task animations"
+    ],
+    "decision_rules": {
+      "must_have": "keyboard-shortcuts",
+      "if_collaboration": "add-real-time-cursors"
+    },
+    "anti_patterns": [
+      "Complex onboarding",
+      "Slow performance"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 17,
+    "industry": "Design System/Component Library",
+    "pattern": "Feature-Rich + Documentation",
+    "style_priority": [
+      "Minimalism",
+      "Accessible & Ethical"
+    ],
+    "color_mood": "Clear hierarchy + Code-like structure",
+    "typography_mood": "Monospace + Clear typography",
+    "effects": [
+      "Code copy animations",
+      "Component previews"
+    ],
+    "decision_rules": {
+      "must_have": "code-examples"
+    },
+    "anti_patterns": [
+      "Poor documentation",
+      "No live preview"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 18,
+    "industry": "AI/Chatbot Platform",
+    "pattern": "Interactive Demo + Minimal",
+    "style_priority": [
+      "AI-Native UI",
+      "Minimalism"
+    ],
+    "color_mood": "Neutral + AI Purple (#6366F1)",
+    "typography_mood": "Modern + Clear typography",
+    "effects": [
+      "Streaming text",
+      "Typing indicators",
+      "Fade-in"
+    ],
+    "decision_rules": {
+      "must_have": "context-awareness"
+    },
+    "anti_patterns": [
+      "Heavy chrome",
+      "Slow response feedback"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 19,
+    "industry": "NFT/Web3 Platform",
+    "pattern": "Feature-Rich Showcase",
+    "style_priority": [
+      "Cyberpunk UI",
+      "Glassmorphism"
+    ],
+    "color_mood": "Dark + Neon + Gold (#FFD700)",
+    "typography_mood": "Bold + Modern typography",
+    "effects": [
+      "Wallet connect animations",
+      "Transaction feedback"
+    ],
+    "decision_rules": {
+      "must_have": "gas-fees-display"
+    },
+    "anti_patterns": [
+      "Light mode default",
+      "No transaction status"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 20,
+    "industry": "Creator Economy Platform",
+    "pattern": "Social Proof + Feature-Rich",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Bento Box Grid"
+    ],
+    "color_mood": "Vibrant + Brand colors",
+    "typography_mood": "Modern + Bold typography",
+    "effects": [
+      "Engagement counter animations",
+      "Profile reveals"
+    ],
+    "decision_rules": {
+      "must_have": "monetization-display"
+    },
+    "anti_patterns": [
+      "Generic layout",
+      "Hidden earnings"
+    ],
+    "severity": "MEDIUM",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 21,
+    "industry": "Remote Work/Collaboration Tool",
+    "pattern": "Feature-Rich + Real-Time",
+    "style_priority": [
+      "Soft UI Evolution",
+      "Minimalism"
+    ],
+    "color_mood": "Calm Blue + Neutral grey",
+    "typography_mood": "Clean + Readable typography",
+    "effects": [
+      "Real-time presence indicators",
+      "Notification badges"
+    ],
+    "decision_rules": {
+      "must_have": "video-integration"
+    },
+    "anti_patterns": [
+      "Cluttered interface",
+      "No presence"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 22,
+    "industry": "Mental Health App",
+    "pattern": "Social Proof-Focused",
+    "style_priority": [
+      "Neumorphism",
+      "Accessible & Ethical"
+    ],
+    "color_mood": "Calm Pastels + Trust colors",
+    "typography_mood": "Calming + Readable typography",
+    "effects": [
+      "Soft press",
+      "Breathing animations"
+    ],
+    "decision_rules": {
+      "must_have": "privacy-first",
+      "if_meditation": "add-breathing-animation"
+    },
+    "anti_patterns": [
+      "Bright neon",
+      "Motion overload"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 23,
+    "industry": "Pet Tech App",
+    "pattern": "Storytelling + Feature-Rich",
+    "style_priority": [
+      "Claymorphism",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Playful + Warm colors",
+    "typography_mood": "Friendly + Playful typography",
+    "effects": [
+      "Pet profile animations",
+      "Health tracking charts"
+    ],
+    "decision_rules": {
+      "must_have": "pet-profiles",
+      "if_health": "add-vet-integration"
+    },
+    "anti_patterns": [
+      "Generic design",
+      "No personality"
+    ],
+    "severity": "MEDIUM",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 24,
+    "industry": "Smart Home/IoT Dashboard",
+    "pattern": "Real-Time Monitoring",
+    "style_priority": [
+      "Glassmorphism",
+      "Dark Mode (OLED)"
+    ],
+    "color_mood": "Dark + Status indicator colors",
+    "typography_mood": "Clear + Functional typography",
+    "effects": [
+      "Device status pulse",
+      "Quick action animations"
+    ],
+    "decision_rules": {
+      "must_have": "energy-monitoring"
+    },
+    "anti_patterns": [
+      "Slow updates",
+      "No automation"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 25,
+    "industry": "EV/Charging Ecosystem",
+    "pattern": "Hero-Centric + Feature-Rich",
+    "style_priority": [
+      "Minimalism",
+      "Aurora UI"
+    ],
+    "color_mood": "Electric Blue (#009CD1) + Green",
+    "typography_mood": "Modern + Clear typography",
+    "effects": [
+      "Range estimation animations",
+      "Map interactions"
+    ],
+    "decision_rules": {
+      "must_have": "range-calculator"
+    },
+    "anti_patterns": [
+      "Poor map UX",
+      "Hidden costs"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 26,
+    "industry": "Subscription Box Service",
+    "pattern": "Feature-Rich + Conversion",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Motion-Driven"
+    ],
+    "color_mood": "Brand + Excitement colors",
+    "typography_mood": "Engaging + Clear typography",
+    "effects": [
+      "Unboxing reveal animations",
+      "Product carousel"
+    ],
+    "decision_rules": {
+      "must_have": "subscription-management"
+    },
+    "anti_patterns": [
+      "Confusing pricing",
+      "No unboxing preview"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 27,
+    "industry": "Podcast Platform",
+    "pattern": "Storytelling + Feature-Rich",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Minimalism"
+    ],
+    "color_mood": "Dark + Audio waveform accents",
+    "typography_mood": "Modern + Clear typography",
+    "effects": [
+      "Waveform visualizations",
+      "Episode transitions"
+    ],
+    "decision_rules": {
+      "must_have": "episode-discovery"
+    },
+    "anti_patterns": [
+      "Poor audio player",
+      "Cluttered layout"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 28,
+    "industry": "Dating App",
+    "pattern": "Social Proof + Feature-Rich",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Motion-Driven"
+    ],
+    "color_mood": "Warm + Romantic (Pink/Red gradients)",
+    "typography_mood": "Modern + Friendly typography",
+    "effects": [
+      "Profile card swipe",
+      "Match animations"
+    ],
+    "decision_rules": {
+      "must_have": "safety-features"
+    },
+    "anti_patterns": [
+      "Generic profiles",
+      "No safety"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 29,
+    "industry": "Micro-Credentials/Badges Platform",
+    "pattern": "Trust & Authority + Feature",
+    "style_priority": [
+      "Minimalism",
+      "Flat Design"
+    ],
+    "color_mood": "Trust Blue + Gold (#FFD700)",
+    "typography_mood": "Professional + Clear typography",
+    "effects": [
+      "Badge reveal animations",
+      "Progress tracking"
+    ],
+    "decision_rules": {
+      "must_have": "progress-display"
+    },
+    "anti_patterns": [
+      "No verification",
+      "Hidden progress"
+    ],
+    "severity": "MEDIUM",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 30,
+    "industry": "Knowledge Base/Documentation",
+    "pattern": "FAQ + Minimal",
+    "style_priority": [
+      "Minimalism",
+      "Accessible & Ethical"
+    ],
+    "color_mood": "Clean hierarchy + Minimal color",
+    "typography_mood": "Clear + Readable typography",
+    "effects": [
+      "Search highlight",
+      "Smooth scrolling"
+    ],
+    "decision_rules": {
+      "must_have": "version-switching"
+    },
+    "anti_patterns": [
+      "Poor navigation",
+      "No search"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 31,
+    "industry": "Hyperlocal Services",
+    "pattern": "Conversion + Feature-Rich",
+    "style_priority": [
+      "Minimalism",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Location markers + Trust colors",
+    "typography_mood": "Clear + Functional typography",
+    "effects": [
+      "Map hover",
+      "Provider card reveals"
+    ],
+    "decision_rules": {
+      "must_have": "booking-system"
+    },
+    "anti_patterns": [
+      "No map",
+      "Hidden reviews"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 32,
+    "industry": "Beauty/Spa/Wellness Service",
+    "pattern": "Hero-Centric + Social Proof",
+    "style_priority": [
+      "Soft UI Evolution",
+      "Neumorphism"
+    ],
+    "color_mood": "Soft pastels (Pink Sage Cream) + Gold accents",
+    "typography_mood": "Elegant + Calming typography",
+    "effects": [
+      "Soft shadows",
+      "Smooth transitions (200-300ms)",
+      "Gentle hover"
+    ],
+    "decision_rules": {
+      "must_have": "before-after-gallery",
+      "if_luxury": "add-gold-accents"
+    },
+    "anti_patterns": [
+      "Bright neon colors",
+      "Harsh animations",
+      "Dark mode"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 33,
+    "industry": "Luxury/Premium Brand",
+    "pattern": "Storytelling + Feature-Rich",
+    "style_priority": [
+      "Liquid Glass",
+      "Glassmorphism"
+    ],
+    "color_mood": "Black + Gold (#FFD700) + White",
+    "typography_mood": "Elegant + Refined typography",
+    "effects": [
+      "Slow parallax",
+      "Premium reveals (400-600ms)"
+    ],
+    "decision_rules": {
+      "must_have": "storytelling"
+    },
+    "anti_patterns": [
+      "Cheap visuals",
+      "Fast animations"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 34,
+    "industry": "Restaurant/Food Service",
+    "pattern": "Hero-Centric + Conversion",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Motion-Driven"
+    ],
+    "color_mood": "Warm colors (Orange Red Brown)",
+    "typography_mood": "Appetizing + Clear typography",
+    "effects": [
+      "Food image reveal",
+      "Menu hover effects"
+    ],
+    "decision_rules": {
+      "must_have": "high_quality_images",
+      "if_delivery": "emphasize-speed"
+    },
+    "anti_patterns": [
+      "Low-quality imagery",
+      "Outdated hours"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 35,
+    "industry": "Fitness/Gym App",
+    "pattern": "Feature-Rich + Data",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Dark Mode (OLED)"
+    ],
+    "color_mood": "Energetic (Orange #FF6B35) + Dark bg",
+    "typography_mood": "Bold + Motivational typography",
+    "effects": [
+      "Progress ring animations",
+      "Achievement unlocks"
+    ],
+    "decision_rules": {
+      "must_have": "workout-plans"
+    },
+    "anti_patterns": [
+      "Static design",
+      "No gamification"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 36,
+    "industry": "Real Estate/Property",
+    "pattern": "Hero-Centric + Feature-Rich",
+    "style_priority": [
+      "Glassmorphism",
+      "Minimalism"
+    ],
+    "color_mood": "Trust Blue + Gold + White",
+    "typography_mood": "Professional + Confident",
+    "effects": [
+      "3D property tour zoom",
+      "Map hover"
+    ],
+    "decision_rules": {
+      "if_luxury": "add-3d-models",
+      "must_have": "map-integration"
+    },
+    "anti_patterns": [
+      "Poor photos",
+      "No virtual tours"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 37,
+    "industry": "Travel/Tourism Agency",
+    "pattern": "Storytelling-Driven + Hero",
+    "style_priority": [
+      "Aurora UI",
+      "Motion-Driven"
+    ],
+    "color_mood": "Vibrant destination + Sky Blue",
+    "typography_mood": "Inspirational + Engaging",
+    "effects": [
+      "Destination parallax",
+      "Itinerary animations"
+    ],
+    "decision_rules": {
+      "if_experience_focused": "use-storytelling",
+      "must_have": "mobile-booking"
+    },
+    "anti_patterns": [
+      "Generic photos",
+      "Complex booking"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 38,
+    "industry": "Hotel/Hospitality",
+    "pattern": "Hero-Centric + Social Proof",
+    "style_priority": [
+      "Liquid Glass",
+      "Minimalism"
+    ],
+    "color_mood": "Warm neutrals + Gold (#D4AF37)",
+    "typography_mood": "Elegant + Welcoming typography",
+    "effects": [
+      "Room gallery",
+      "Amenity reveals"
+    ],
+    "decision_rules": {
+      "must_have": "virtual-tour"
+    },
+    "anti_patterns": [
+      "Poor photos",
+      "Complex booking"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 39,
+    "industry": "Wedding/Event Planning",
+    "pattern": "Storytelling + Social Proof",
+    "style_priority": [
+      "Soft UI Evolution",
+      "Aurora UI"
+    ],
+    "color_mood": "Soft Pink (#FFD6E0) + Gold + Cream",
+    "typography_mood": "Elegant + Romantic typography",
+    "effects": [
+      "Gallery reveals",
+      "Timeline animations"
+    ],
+    "decision_rules": {
+      "must_have": "planning-tools"
+    },
+    "anti_patterns": [
+      "Generic templates",
+      "No portfolio"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 40,
+    "industry": "Legal Services",
+    "pattern": "Trust & Authority + Minimal",
+    "style_priority": [
+      "Trust & Authority",
+      "Minimalism"
+    ],
+    "color_mood": "Navy Blue (#1E3A5F) + Gold + White",
+    "typography_mood": "Professional + Authoritative typography",
+    "effects": [
+      "Practice area reveal",
+      "Attorney profile animations"
+    ],
+    "decision_rules": {
+      "must_have": "credential-display"
+    },
+    "anti_patterns": [
+      "Outdated design",
+      "Hidden credentials",
+      "AI purple/pink gradients"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 41,
+    "industry": "Insurance Platform",
+    "pattern": "Conversion + Trust",
+    "style_priority": [
+      "Trust & Authority",
+      "Flat Design"
+    ],
+    "color_mood": "Trust Blue (#0066CC) + Green + Neutral",
+    "typography_mood": "Clear + Professional typography",
+    "effects": [
+      "Quote calculator animations",
+      "Policy comparison"
+    ],
+    "decision_rules": {
+      "must_have": "policy-comparison"
+    },
+    "anti_patterns": [
+      "Confusing pricing",
+      "No trust signals",
+      "AI purple/pink gradients"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 42,
+    "industry": "Banking/Traditional Finance",
+    "pattern": "Trust & Authority + Feature",
+    "style_priority": [
+      "Minimalism",
+      "Accessible & Ethical"
+    ],
+    "color_mood": "Navy (#0A1628) + Trust Blue + Gold",
+    "typography_mood": "Professional + Trustworthy typography",
+    "effects": [
+      "Smooth number animations",
+      "Security indicators"
+    ],
+    "decision_rules": {
+      "must_have": "accessibility"
+    },
+    "anti_patterns": [
+      "Playful design",
+      "Poor security UX",
+      "AI purple/pink gradients"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 43,
+    "industry": "Online Course/E-learning",
+    "pattern": "Feature-Rich + Social Proof",
+    "style_priority": [
+      "Claymorphism",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Vibrant learning colors + Progress green",
+    "typography_mood": "Friendly + Engaging typography",
+    "effects": [
+      "Progress bar animations",
+      "Certificate reveals"
+    ],
+    "decision_rules": {
+      "must_have": "video-player"
+    },
+    "anti_patterns": [
+      "Boring design",
+      "No gamification"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 44,
+    "industry": "Non-profit/Charity",
+    "pattern": "Storytelling + Trust",
+    "style_priority": [
+      "Accessible & Ethical",
+      "Organic Biophilic"
+    ],
+    "color_mood": "Cause-related colors + Trust + Warm",
+    "typography_mood": "Heartfelt + Readable typography",
+    "effects": [
+      "Impact counter animations",
+      "Story reveals"
+    ],
+    "decision_rules": {
+      "must_have": "donation-transparency"
+    },
+    "anti_patterns": [
+      "No impact data",
+      "Hidden financials"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 45,
+    "industry": "Music Streaming",
+    "pattern": "Feature-Rich Showcase",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Dark (#121212) + Vibrant accents + Album art colors",
+    "typography_mood": "Modern + Bold typography",
+    "effects": [
+      "Waveform visualization",
+      "Playlist animations"
+    ],
+    "decision_rules": {
+      "must_have": "audio-player-ux",
+      "if_discovery_focused": "add-playlist-recommendations"
+    },
+    "anti_patterns": [
+      "Cluttered layout",
+      "Poor audio player UX"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 46,
+    "industry": "Video Streaming/OTT",
+    "pattern": "Hero-Centric + Feature-Rich",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Motion-Driven"
+    ],
+    "color_mood": "Dark bg + Poster colors + Brand accent",
+    "typography_mood": "Bold + Engaging typography",
+    "effects": [
+      "Video player animations",
+      "Content carousel (parallax)"
+    ],
+    "decision_rules": {
+      "must_have": "continue-watching",
+      "if_personalized": "add-recommendations"
+    },
+    "anti_patterns": [
+      "Static layout",
+      "Slow video player"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 47,
+    "industry": "Job Board/Recruitment",
+    "pattern": "Conversion-Optimized + Feature-Rich",
+    "style_priority": [
+      "Flat Design",
+      "Minimalism"
+    ],
+    "color_mood": "Professional Blue + Success Green + Neutral",
+    "typography_mood": "Clear + Professional typography",
+    "effects": [
+      "Search/filter animations",
+      "Application flow"
+    ],
+    "decision_rules": {
+      "must_have": "advanced-search",
+      "if_salary_focused": "highlight-compensation"
+    },
+    "anti_patterns": [
+      "Outdated forms",
+      "Hidden filters"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 48,
+    "industry": "Marketplace (P2P)",
+    "pattern": "Feature-Rich Showcase + Social Proof",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Flat Design"
+    ],
+    "color_mood": "Trust colors + Category colors + Success green",
+    "typography_mood": "Modern + Engaging typography",
+    "effects": [
+      "Review star animations",
+      "Listing hover effects"
+    ],
+    "decision_rules": {
+      "must_have": "secure-payment"
+    },
+    "anti_patterns": [
+      "Low trust signals",
+      "Confusing layout"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 49,
+    "industry": "Logistics/Delivery",
+    "pattern": "Feature-Rich Showcase + Real-Time",
+    "style_priority": [
+      "Minimalism",
+      "Flat Design"
+    ],
+    "color_mood": "Blue (#2563EB) + Orange (tracking) + Green",
+    "typography_mood": "Clear + Functional typography",
+    "effects": [
+      "Real-time tracking animation",
+      "Status pulse"
+    ],
+    "decision_rules": {
+      "must_have": "delivery-updates"
+    },
+    "anti_patterns": [
+      "Static tracking",
+      "No map integration",
+      "AI purple/pink gradients"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 50,
+    "industry": "Agriculture/Farm Tech",
+    "pattern": "Feature-Rich Showcase",
+    "style_priority": [
+      "Organic Biophilic",
+      "Flat Design"
+    ],
+    "color_mood": "Earth Green (#4A7C23) + Brown + Sky Blue",
+    "typography_mood": "Clear + Informative typography",
+    "effects": [
+      "Data visualization",
+      "Weather animations"
+    ],
+    "decision_rules": {
+      "must_have": "sensor-dashboard",
+      "if_crop_focused": "add-health-indicators"
+    },
+    "anti_patterns": [
+      "Generic design",
+      "Ignored accessibility",
+      "AI purple/pink gradients"
+    ],
+    "severity": "MEDIUM",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 51,
+    "industry": "Construction/Architecture",
+    "pattern": "Hero-Centric + Feature-Rich",
+    "style_priority": [
+      "Minimalism",
+      "3D & Hyperrealism"
+    ],
+    "color_mood": "Grey (#4A4A4A) + Orange (safety) + Blueprint Blue",
+    "typography_mood": "Professional + Bold typography",
+    "effects": [
+      "3D model viewer",
+      "Timeline animations"
+    ],
+    "decision_rules": {
+      "must_have": "project-portfolio",
+      "if_team_collaboration": "add-real-time-updates"
+    },
+    "anti_patterns": [
+      "2D-only layouts",
+      "Poor image quality",
+      "AI purple/pink gradients"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 52,
+    "industry": "Automotive/Car Dealership",
+    "pattern": "Hero-Centric + Feature-Rich",
+    "style_priority": [
+      "Motion-Driven",
+      "3D & Hyperrealism"
+    ],
+    "color_mood": "Brand colors + Metallic + Dark/Light",
+    "typography_mood": "Bold + Confident typography",
+    "effects": [
+      "360 product view",
+      "Configurator animations"
+    ],
+    "decision_rules": {
+      "must_have": "financing-calculator"
+    },
+    "anti_patterns": [
+      "Static product pages",
+      "Poor UX"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 53,
+    "industry": "Photography Studio",
+    "pattern": "Storytelling-Driven + Hero-Centric",
+    "style_priority": [
+      "Motion-Driven",
+      "Minimalism"
+    ],
+    "color_mood": "Black + White + Minimal accent",
+    "typography_mood": "Elegant + Minimal typography",
+    "effects": [
+      "Full-bleed gallery",
+      "Before/after reveal"
+    ],
+    "decision_rules": {
+      "must_have": "portfolio-showcase",
+      "if_booking": "add-calendar-system"
+    },
+    "anti_patterns": [
+      "Heavy text",
+      "Poor image showcase"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 54,
+    "industry": "Coworking Space",
+    "pattern": "Hero-Centric + Feature-Rich",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Glassmorphism"
+    ],
+    "color_mood": "Energetic colors + Wood tones + Brand",
+    "typography_mood": "Modern + Engaging typography",
+    "effects": [
+      "Space tour video",
+      "Amenity reveal animations"
+    ],
+    "decision_rules": {
+      "must_have": "booking-system"
+    },
+    "anti_patterns": [
+      "Outdated photos",
+      "Confusing layout"
+    ],
+    "severity": "MEDIUM",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 55,
+    "industry": "Home Services (Plumber/Electrician)",
+    "pattern": "Conversion-Optimized + Trust",
+    "style_priority": [
+      "Flat Design",
+      "Trust & Authority"
+    ],
+    "color_mood": "Trust Blue + Safety Orange + Grey",
+    "typography_mood": "Professional + Clear typography",
+    "effects": [
+      "Emergency contact highlight",
+      "Service menu animations"
+    ],
+    "decision_rules": {
+      "must_have": "certifications-display"
+    },
+    "anti_patterns": [
+      "Hidden contact info",
+      "No certifications"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 56,
+    "industry": "Childcare/Daycare",
+    "pattern": "Social Proof-Focused + Trust",
+    "style_priority": [
+      "Claymorphism",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Playful pastels + Safe colors + Warm",
+    "typography_mood": "Friendly + Playful typography",
+    "effects": [
+      "Parent portal animations",
+      "Activity gallery reveal"
+    ],
+    "decision_rules": {
+      "must_have": "safety-certifications"
+    },
+    "anti_patterns": [
+      "Generic design",
+      "Hidden safety info"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 57,
+    "industry": "Senior Care/Elderly",
+    "pattern": "Trust & Authority + Accessible",
+    "style_priority": [
+      "Accessible & Ethical",
+      "Soft UI Evolution"
+    ],
+    "color_mood": "Calm Blue + Warm neutrals + Large text",
+    "typography_mood": "Large + Clear typography (18px+)",
+    "effects": [
+      "Large touch targets",
+      "Clear navigation"
+    ],
+    "decision_rules": {
+      "must_have": "family-portal"
+    },
+    "anti_patterns": [
+      "Small text",
+      "Complex navigation",
+      "AI purple/pink gradients"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 58,
+    "industry": "Medical Clinic",
+    "pattern": "Trust & Authority + Conversion",
+    "style_priority": [
+      "Accessible & Ethical",
+      "Minimalism"
+    ],
+    "color_mood": "Medical Blue (#0077B6) + Trust White",
+    "typography_mood": "Professional + Readable typography",
+    "effects": [
+      "Online booking flow",
+      "Doctor profile reveals"
+    ],
+    "decision_rules": {
+      "must_have": "insurance-info"
+    },
+    "anti_patterns": [
+      "Outdated interface",
+      "Confusing booking",
+      "AI purple/pink gradients"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 59,
+    "industry": "Pharmacy/Drug Store",
+    "pattern": "Conversion-Optimized + Trust",
+    "style_priority": [
+      "Flat Design",
+      "Accessible & Ethical"
+    ],
+    "color_mood": "Pharmacy Green + Trust Blue + Clean White",
+    "typography_mood": "Clear + Functional typography",
+    "effects": [
+      "Prescription upload flow",
+      "Refill reminders"
+    ],
+    "decision_rules": {
+      "must_have": "drug-interaction-warnings"
+    },
+    "anti_patterns": [
+      "Confusing layout",
+      "Privacy concerns",
+      "AI purple/pink gradients"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 60,
+    "industry": "Dental Practice",
+    "pattern": "Social Proof-Focused + Conversion",
+    "style_priority": [
+      "Soft UI Evolution",
+      "Minimalism"
+    ],
+    "color_mood": "Fresh Blue + White + Smile Yellow",
+    "typography_mood": "Friendly + Professional typography",
+    "effects": [
+      "Before/after gallery",
+      "Patient testimonial carousel"
+    ],
+    "decision_rules": {
+      "must_have": "appointment-system"
+    },
+    "anti_patterns": [
+      "Poor imagery",
+      "No testimonials"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 61,
+    "industry": "Veterinary Clinic",
+    "pattern": "Social Proof-Focused + Trust",
+    "style_priority": [
+      "Claymorphism",
+      "Accessible & Ethical"
+    ],
+    "color_mood": "Caring Blue + Pet colors + Warm",
+    "typography_mood": "Friendly + Welcoming typography",
+    "effects": [
+      "Pet profile management",
+      "Service animations"
+    ],
+    "decision_rules": {
+      "must_have": "emergency-contact"
+    },
+    "anti_patterns": [
+      "Generic design",
+      "Hidden services"
+    ],
+    "severity": "MEDIUM",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 62,
+    "industry": "Florist/Plant Shop",
+    "pattern": "Hero-Centric + Conversion",
+    "style_priority": [
+      "Organic Biophilic",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Natural Green + Floral pinks/purples",
+    "typography_mood": "Elegant + Natural typography",
+    "effects": [
+      "Product reveal",
+      "Seasonal transitions"
+    ],
+    "decision_rules": {
+      "must_have": "care-guides"
+    },
+    "anti_patterns": [
+      "Poor imagery",
+      "No seasonal content"
+    ],
+    "severity": "MEDIUM",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 63,
+    "industry": "Bakery/Cafe",
+    "pattern": "Hero-Centric + Conversion",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Soft UI Evolution"
+    ],
+    "color_mood": "Warm Brown + Cream + Appetizing accents",
+    "typography_mood": "Warm + Inviting typography",
+    "effects": [
+      "Menu hover",
+      "Order animations"
+    ],
+    "decision_rules": {
+      "must_have": "online-ordering"
+    },
+    "anti_patterns": [
+      "Poor food photos",
+      "Hidden hours"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 64,
+    "industry": "Brewery/Winery",
+    "pattern": "Storytelling + Hero-Centric",
+    "style_priority": [
+      "Motion-Driven",
+      "Storytelling-Driven"
+    ],
+    "color_mood": "Deep amber/burgundy + Gold + Craft",
+    "typography_mood": "Artisanal + Heritage typography",
+    "effects": [
+      "Tasting note reveals",
+      "Heritage timeline"
+    ],
+    "decision_rules": {
+      "must_have": "story-heritage"
+    },
+    "anti_patterns": [
+      "Generic product pages",
+      "No story"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 65,
+    "industry": "Airline",
+    "pattern": "Conversion + Feature-Rich",
+    "style_priority": [
+      "Minimalism",
+      "Glassmorphism"
+    ],
+    "color_mood": "Sky Blue + Brand colors + Trust",
+    "typography_mood": "Clear + Professional typography",
+    "effects": [
+      "Flight search animations",
+      "Boarding pass reveals"
+    ],
+    "decision_rules": {
+      "must_have": "mobile-first"
+    },
+    "anti_patterns": [
+      "Complex booking",
+      "Poor mobile"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 66,
+    "industry": "News/Media Platform",
+    "pattern": "Hero-Centric + Feature-Rich",
+    "style_priority": [
+      "Minimalism",
+      "Flat Design"
+    ],
+    "color_mood": "Brand colors + High contrast",
+    "typography_mood": "Clear + Readable typography",
+    "effects": [
+      "Breaking news badge",
+      "Article reveal animations"
+    ],
+    "decision_rules": {
+      "must_have": "category-navigation"
+    },
+    "anti_patterns": [
+      "Cluttered layout",
+      "Slow loading"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 67,
+    "industry": "Magazine/Blog",
+    "pattern": "Storytelling + Hero-Centric",
+    "style_priority": [
+      "Swiss Modernism 2.0",
+      "Motion-Driven"
+    ],
+    "color_mood": "Editorial colors + Brand + Clean white",
+    "typography_mood": "Editorial + Elegant typography",
+    "effects": [
+      "Article transitions",
+      "Category reveals"
+    ],
+    "decision_rules": {
+      "must_have": "newsletter-signup"
+    },
+    "anti_patterns": [
+      "Poor typography",
+      "Slow loading"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 68,
+    "industry": "Freelancer Platform",
+    "pattern": "Feature-Rich + Conversion",
+    "style_priority": [
+      "Flat Design",
+      "Minimalism"
+    ],
+    "color_mood": "Professional Blue + Success Green",
+    "typography_mood": "Clear + Professional typography",
+    "effects": [
+      "Skill match animations",
+      "Review reveals"
+    ],
+    "decision_rules": {
+      "must_have": "skill-matching"
+    },
+    "anti_patterns": [
+      "Poor profiles",
+      "No reviews"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 69,
+    "industry": "Marketing Agency",
+    "pattern": "Storytelling + Feature-Rich",
+    "style_priority": [
+      "Brutalism",
+      "Motion-Driven"
+    ],
+    "color_mood": "Bold brand colors + Creative freedom",
+    "typography_mood": "Bold + Expressive typography",
+    "effects": [
+      "Portfolio reveals",
+      "Results animations"
+    ],
+    "decision_rules": {
+      "must_have": "results-metrics"
+    },
+    "anti_patterns": [
+      "Boring design",
+      "Hidden work"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 70,
+    "industry": "Event Management",
+    "pattern": "Hero-Centric + Feature-Rich",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Motion-Driven"
+    ],
+    "color_mood": "Event theme colors + Excitement accents",
+    "typography_mood": "Bold + Engaging typography",
+    "effects": [
+      "Countdown timer",
+      "Registration flow"
+    ],
+    "decision_rules": {
+      "must_have": "agenda-display"
+    },
+    "anti_patterns": [
+      "Confusing registration",
+      "No countdown"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 71,
+    "industry": "Membership/Community",
+    "pattern": "Social Proof + Conversion",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Soft UI Evolution"
+    ],
+    "color_mood": "Community brand colors + Engagement",
+    "typography_mood": "Friendly + Engaging typography",
+    "effects": [
+      "Member counter",
+      "Benefit reveals"
+    ],
+    "decision_rules": {
+      "must_have": "pricing-tiers"
+    },
+    "anti_patterns": [
+      "Hidden benefits",
+      "No community proof"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 72,
+    "industry": "Newsletter Platform",
+    "pattern": "Minimal + Conversion",
+    "style_priority": [
+      "Minimalism",
+      "Flat Design"
+    ],
+    "color_mood": "Brand primary + Clean white + CTA",
+    "typography_mood": "Clean + Readable typography",
+    "effects": [
+      "Subscribe form",
+      "Archive reveals"
+    ],
+    "decision_rules": {
+      "must_have": "sample-content"
+    },
+    "anti_patterns": [
+      "Complex signup",
+      "No preview"
+    ],
+    "severity": "MEDIUM",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 73,
+    "industry": "Digital Products/Downloads",
+    "pattern": "Feature-Rich + Conversion",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Motion-Driven"
+    ],
+    "color_mood": "Product colors + Brand + Success green",
+    "typography_mood": "Modern + Clear typography",
+    "effects": [
+      "Product preview",
+      "Instant delivery animations"
+    ],
+    "decision_rules": {
+      "must_have": "instant-delivery"
+    },
+    "anti_patterns": [
+      "No preview",
+      "Slow delivery"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 74,
+    "industry": "Church/Religious Organization",
+    "pattern": "Hero-Centric + Social Proof",
+    "style_priority": [
+      "Accessible & Ethical",
+      "Soft UI Evolution"
+    ],
+    "color_mood": "Warm Gold + Deep Purple/Blue + White",
+    "typography_mood": "Welcoming + Clear typography",
+    "effects": [
+      "Service time highlights",
+      "Event calendar"
+    ],
+    "decision_rules": {
+      "must_have": "community-events"
+    },
+    "anti_patterns": [
+      "Outdated design",
+      "Hidden info"
+    ],
+    "severity": "MEDIUM",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 75,
+    "industry": "Sports Team/Club",
+    "pattern": "Hero-Centric + Feature-Rich",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Motion-Driven"
+    ],
+    "color_mood": "Team colors + Energetic accents",
+    "typography_mood": "Bold + Impactful typography",
+    "effects": [
+      "Score animations",
+      "Schedule reveals"
+    ],
+    "decision_rules": {
+      "must_have": "roster"
+    },
+    "anti_patterns": [
+      "Static content",
+      "Poor fan engagement"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 76,
+    "industry": "Museum/Gallery",
+    "pattern": "Storytelling + Feature-Rich",
+    "style_priority": [
+      "Minimalism",
+      "Motion-Driven"
+    ],
+    "color_mood": "Art-appropriate neutrals + Exhibition accents",
+    "typography_mood": "Elegant + Minimal typography",
+    "effects": [
+      "Virtual tour",
+      "Collection reveals"
+    ],
+    "decision_rules": {
+      "must_have": "exhibition-info"
+    },
+    "anti_patterns": [
+      "Cluttered layout",
+      "No online access"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 77,
+    "industry": "Theater/Cinema",
+    "pattern": "Hero-Centric + Conversion",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Motion-Driven"
+    ],
+    "color_mood": "Dark + Spotlight accents + Gold",
+    "typography_mood": "Dramatic + Bold typography",
+    "effects": [
+      "Seat selection",
+      "Trailer reveals"
+    ],
+    "decision_rules": {
+      "must_have": "seat-selection"
+    },
+    "anti_patterns": [
+      "Poor booking UX",
+      "No trailers"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 78,
+    "industry": "Language Learning App",
+    "pattern": "Feature-Rich + Social Proof",
+    "style_priority": [
+      "Claymorphism",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Playful colors + Progress indicators",
+    "typography_mood": "Friendly + Clear typography",
+    "effects": [
+      "Progress animations",
+      "Achievement unlocks"
+    ],
+    "decision_rules": {
+      "must_have": "gamification"
+    },
+    "anti_patterns": [
+      "Boring design",
+      "No motivation"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 79,
+    "industry": "Coding Bootcamp",
+    "pattern": "Feature-Rich + Social Proof",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Minimalism"
+    ],
+    "color_mood": "Code editor colors + Brand + Success",
+    "typography_mood": "Technical + Clear typography",
+    "effects": [
+      "Terminal animations",
+      "Career outcome reveals"
+    ],
+    "decision_rules": {
+      "must_have": "career-outcomes"
+    },
+    "anti_patterns": [
+      "Light mode only",
+      "Hidden results"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 80,
+    "industry": "Cybersecurity Platform",
+    "pattern": "Trust & Authority + Real-Time",
+    "style_priority": [
+      "Cyberpunk UI",
+      "Dark Mode (OLED)"
+    ],
+    "color_mood": "Matrix Green (#00FF00) + Deep Black",
+    "typography_mood": "Technical + Clear typography",
+    "effects": [
+      "Threat visualization",
+      "Alert animations"
+    ],
+    "decision_rules": {
+      "must_have": "threat-display"
+    },
+    "anti_patterns": [
+      "Light mode",
+      "Poor data viz"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 81,
+    "industry": "Developer Tool / IDE",
+    "pattern": "Minimal + Documentation",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Minimalism"
+    ],
+    "color_mood": "Dark syntax theme + Blue focus",
+    "typography_mood": "Monospace + Functional typography",
+    "effects": [
+      "Syntax highlighting",
+      "Command palette"
+    ],
+    "decision_rules": {
+      "must_have": "documentation"
+    },
+    "anti_patterns": [
+      "Light mode default",
+      "Slow performance"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 82,
+    "industry": "Biotech / Life Sciences",
+    "pattern": "Storytelling + Data",
+    "style_priority": [
+      "Glassmorphism",
+      "Clean Science"
+    ],
+    "color_mood": "Sterile White + DNA Blue + Life Green",
+    "typography_mood": "Scientific + Clear typography",
+    "effects": [
+      "Data visualization",
+      "Research reveals"
+    ],
+    "decision_rules": {
+      "must_have": "clean-aesthetic"
+    },
+    "anti_patterns": [
+      "Cluttered data",
+      "Poor credibility"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 83,
+    "industry": "Space Tech / Aerospace",
+    "pattern": "Immersive + Feature-Rich",
+    "style_priority": [
+      "Holographic/HUD",
+      "Dark Mode"
+    ],
+    "color_mood": "Deep Space Black + Star White + Metallic",
+    "typography_mood": "Futuristic + Precise typography",
+    "effects": [
+      "Telemetry animations",
+      "3D renders"
+    ],
+    "decision_rules": {
+      "must_have": "precision-data"
+    },
+    "anti_patterns": [
+      "Generic design",
+      "No immersion"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 84,
+    "industry": "Architecture / Interior",
+    "pattern": "Portfolio + Hero-Centric",
+    "style_priority": [
+      "Exaggerated Minimalism",
+      "High Imagery"
+    ],
+    "color_mood": "Monochrome + Gold Accent + High Imagery",
+    "typography_mood": "Architectural + Elegant typography",
+    "effects": [
+      "Project gallery",
+      "Blueprint reveals"
+    ],
+    "decision_rules": {
+      "must_have": "project-portfolio"
+    },
+    "anti_patterns": [
+      "Poor imagery",
+      "Cluttered layout"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 85,
+    "industry": "Quantum Computing Interface",
+    "pattern": "Immersive + Interactive",
+    "style_priority": [
+      "Holographic/HUD",
+      "Dark Mode"
+    ],
+    "color_mood": "Quantum Blue (#00FFFF) + Deep Black",
+    "typography_mood": "Futuristic + Scientific typography",
+    "effects": [
+      "Probability visualizations",
+      "Qubit state animations"
+    ],
+    "decision_rules": {
+      "must_have": "scientific-credibility"
+    },
+    "anti_patterns": [
+      "Generic tech design",
+      "No viz"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 86,
+    "industry": "Biohacking / Longevity App",
+    "pattern": "Data-Dense + Storytelling",
+    "style_priority": [
+      "Biomimetic/Organic 2.0",
+      "Minimalism"
+    ],
+    "color_mood": "Cellular Pink/Red + DNA Blue + White",
+    "typography_mood": "Scientific + Clear typography",
+    "effects": [
+      "Biological data viz",
+      "Progress animations"
+    ],
+    "decision_rules": {
+      "must_have": "scientific-credibility"
+    },
+    "anti_patterns": [
+      "Generic health app",
+      "No privacy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 87,
+    "industry": "Autonomous Drone Fleet Manager",
+    "pattern": "Real-Time + Feature-Rich",
+    "style_priority": [
+      "HUD/Sci-Fi FUI",
+      "Real-Time"
+    ],
+    "color_mood": "Tactical Green + Alert Red + Map Dark",
+    "typography_mood": "Technical + Functional typography",
+    "effects": [
+      "Telemetry animations",
+      "3D spatial awareness"
+    ],
+    "decision_rules": {
+      "must_have": "safety-alerts"
+    },
+    "anti_patterns": [
+      "Slow updates",
+      "Poor spatial viz"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 88,
+    "industry": "Generative Art Platform",
+    "pattern": "Showcase + Feature-Rich",
+    "style_priority": [
+      "Minimalism",
+      "Gen Z Chaos"
+    ],
+    "color_mood": "Neutral (#F5F5F5) + User Content",
+    "typography_mood": "Minimal + Content-focused typography",
+    "effects": [
+      "Gallery masonry",
+      "Minting animations"
+    ],
+    "decision_rules": {
+      "must_have": "creator-attribution"
+    },
+    "anti_patterns": [
+      "Heavy chrome",
+      "Slow loading"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 89,
+    "industry": "Spatial Computing OS / App",
+    "pattern": "Immersive + Interactive",
+    "style_priority": [
+      "Spatial UI (VisionOS)",
+      "Glassmorphism"
+    ],
+    "color_mood": "Frosted Glass + System Colors + Depth",
+    "typography_mood": "Spatial + Readable typography",
+    "effects": [
+      "Depth hierarchy",
+      "Gaze interactions"
+    ],
+    "decision_rules": {
+      "must_have": "environment-awareness"
+    },
+    "anti_patterns": [
+      "2D design",
+      "No spatial depth"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 90,
+    "industry": "Sustainable Energy / Climate Tech",
+    "pattern": "Data + Trust",
+    "style_priority": [
+      "Organic Biophilic",
+      "E-Ink/Paper"
+    ],
+    "color_mood": "Earth Green + Sky Blue + Solar Yellow",
+    "typography_mood": "Clear + Informative typography",
+    "effects": [
+      "Impact viz",
+      "Progress animations"
+    ],
+    "decision_rules": {
+      "must_have": "impact-visualization"
+    },
+    "anti_patterns": [
+      "Greenwashing",
+      "No real data"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 91,
+    "industry": "Personal Finance Tracker",
+    "pattern": "Interactive Product Demo",
+    "style_priority": [
+      "Glassmorphism",
+      "Dark Mode (OLED)"
+    ],
+    "color_mood": "Calm blue + success green + alert red + chart accents",
+    "typography_mood": "Modern + Clear hierarchy",
+    "effects": [
+      "Backdrop blur (10-20px)",
+      "Translucent overlays"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle",
+      "if_low_performance": "fallback-to-flat"
+    },
+    "anti_patterns": [
+      "Pure white backgrounds"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 92,
+    "industry": "Chat & Messaging App",
+    "pattern": "Feature-Rich Showcase + Demo",
+    "style_priority": [
+      "Minimalism",
+      "Micro-interactions"
+    ],
+    "color_mood": "Brand primary + bubble contrast (sender/receiver) + typing grey",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle hover 200ms",
+      "Smooth transitions",
+      "Clean"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 93,
+    "industry": "Notes & Writing App",
+    "pattern": "Minimal & Direct",
+    "style_priority": [
+      "Minimalism",
+      "Flat Design"
+    ],
+    "color_mood": "Clean white/cream + minimal accent + editor syntax colors",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 94,
+    "industry": "Habit Tracker",
+    "pattern": "Social Proof-Focused + Demo",
+    "style_priority": [
+      "Claymorphism",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Streak warm (amber/orange) + progress green + motivational accents",
+    "typography_mood": "Playful + Rounded + Friendly",
+    "effects": [
+      "Multi-layer shadows",
+      "Spring bounce",
+      "Soft press 200ms"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 95,
+    "industry": "Food Delivery / On-Demand",
+    "pattern": "Hero-Centric Design + Feature-Rich",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Motion-Driven"
+    ],
+    "color_mood": "Appetizing warm (orange/red) + trust blue + map accent",
+    "typography_mood": "Energetic + Bold + Large",
+    "effects": [
+      "Scroll animations",
+      "Parallax",
+      "Page transitions"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 96,
+    "industry": "Ride Hailing / Transportation",
+    "pattern": "Conversion-Optimized + Demo",
+    "style_priority": [
+      "Minimalism",
+      "Glassmorphism"
+    ],
+    "color_mood": "Brand primary + map neutral + status indicator colors",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Backdrop blur (10-20px)",
+      "Translucent overlays"
+    ],
+    "decision_rules": {
+      "if_low_performance": "fallback-to-flat",
+      "if_conversion_focused": "add-urgency-colors"
+    },
+    "anti_patterns": [
+      "Excessive decoration"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 97,
+    "industry": "Recipe & Cooking App",
+    "pattern": "Hero-Centric Design + Feature-Rich",
+    "style_priority": [
+      "Claymorphism",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Warm food tones (terracotta/sage/cream) + appetizing imagery",
+    "typography_mood": "Playful + Rounded + Friendly",
+    "effects": [
+      "Multi-layer shadows",
+      "Spring bounce",
+      "Soft press 200ms"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 98,
+    "industry": "Meditation & Mindfulness",
+    "pattern": "Storytelling-Driven + Social Proof",
+    "style_priority": [
+      "Neumorphism",
+      "Soft UI Evolution"
+    ],
+    "color_mood": "Ultra-calm pastels (lavender/sage/sky) + breathing animation gradient",
+    "typography_mood": "Subtle + Soft + Monochromatic",
+    "effects": [
+      "Dual shadows (light",
+      "dark)",
+      "Soft press 150ms"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Inconsistent styling",
+      "Poor contrast ratios"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 99,
+    "industry": "Weather App",
+    "pattern": "Hero-Centric Design",
+    "style_priority": [
+      "Glassmorphism",
+      "Aurora UI"
+    ],
+    "color_mood": "Atmospheric gradients (sky blue → sunset → storm grey) + temp scale",
+    "typography_mood": "Modern + Clear hierarchy",
+    "effects": [
+      "Backdrop blur (10-20px)",
+      "Translucent overlays"
+    ],
+    "decision_rules": {
+      "if_low_performance": "fallback-to-flat"
+    },
+    "anti_patterns": [
+      "Inconsistent styling",
+      "Poor contrast ratios"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 100,
+    "industry": "Diary & Journal App",
+    "pattern": "Storytelling-Driven",
+    "style_priority": [
+      "Soft UI Evolution",
+      "Minimalism"
+    ],
+    "color_mood": "Warm paper tones (cream/linen) + muted ink + mood-coded accents",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle hover 200ms",
+      "Smooth transitions",
+      "Clean"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 101,
+    "industry": "CRM & Client Management",
+    "pattern": "Feature-Rich Showcase + Demo",
+    "style_priority": [
+      "Flat Design",
+      "Minimalism"
+    ],
+    "color_mood": "Professional blue + pipeline stage colors + closed-won green",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 102,
+    "industry": "Inventory & Stock Management",
+    "pattern": "Feature-Rich Showcase",
+    "style_priority": [
+      "Flat Design",
+      "Minimalism"
+    ],
+    "color_mood": "Functional neutral + status traffic-light (green/amber/red) + scanner accent",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 103,
+    "industry": "Flashcard & Study Tool",
+    "pattern": "Feature-Rich Showcase + Demo",
+    "style_priority": [
+      "Claymorphism",
+      "Micro-interactions"
+    ],
+    "color_mood": "Playful primary + correct green + incorrect red + progress blue",
+    "typography_mood": "Playful + Rounded + Friendly",
+    "effects": [
+      "Multi-layer shadows",
+      "Spring bounce",
+      "Soft press 200ms"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Inconsistent styling",
+      "Poor contrast ratios"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 104,
+    "industry": "Booking & Appointment App",
+    "pattern": "Conversion-Optimized",
+    "style_priority": [
+      "Soft UI Evolution",
+      "Flat Design"
+    ],
+    "color_mood": "Trust blue + available green + booked grey + confirm accent",
+    "typography_mood": "Bold + Clean + Sans-serif",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_conversion_focused": "add-urgency-colors"
+    },
+    "anti_patterns": [
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 105,
+    "industry": "Invoice & Billing Tool",
+    "pattern": "Conversion-Optimized + Trust",
+    "style_priority": [
+      "Minimalism",
+      "Flat Design"
+    ],
+    "color_mood": "Professional navy + paid green + overdue red + neutral grey",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_conversion_focused": "add-urgency-colors"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 106,
+    "industry": "Grocery & Shopping List",
+    "pattern": "Minimal & Direct + Demo",
+    "style_priority": [
+      "Flat Design",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Fresh green + food-category colors + checkmark accent",
+    "typography_mood": "Bold + Clean + Sans-serif",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Complex shadows",
+      "3D effects",
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 107,
+    "industry": "Timer & Pomodoro",
+    "pattern": "Minimal & Direct",
+    "style_priority": [
+      "Minimalism",
+      "Neumorphism"
+    ],
+    "color_mood": "High-contrast on dark + focus red/amber + break green",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Dual shadows (light",
+      "dark)",
+      "Soft press 150ms"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 108,
+    "industry": "Parenting & Baby Tracker",
+    "pattern": "Social Proof-Focused + Trust",
+    "style_priority": [
+      "Claymorphism",
+      "Soft UI Evolution"
+    ],
+    "color_mood": "Soft pastels (baby pink/sky blue/mint/peach) + warm accents",
+    "typography_mood": "Playful + Rounded + Friendly",
+    "effects": [
+      "Multi-layer shadows",
+      "Spring bounce",
+      "Soft press 200ms"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Inconsistent styling",
+      "Poor contrast ratios"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 109,
+    "industry": "Scanner & Document Manager",
+    "pattern": "Feature-Rich Showcase + Demo",
+    "style_priority": [
+      "Minimalism",
+      "Flat Design"
+    ],
+    "color_mood": "Clean white + camera viewfinder accent + file-type color coding",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 110,
+    "industry": "Calendar & Scheduling App",
+    "pattern": "Feature-Rich Showcase + Demo",
+    "style_priority": [
+      "Flat Design",
+      "Micro-interactions"
+    ],
+    "color_mood": "Clean blue + event category accent colors + success green",
+    "typography_mood": "Bold + Clean + Sans-serif",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 111,
+    "industry": "Password Manager",
+    "pattern": "Trust & Authority + Feature-Rich",
+    "style_priority": [
+      "Minimalism",
+      "Accessible & Ethical"
+    ],
+    "color_mood": "Trust blue + security green + dark neutral",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle hover 200ms",
+      "Smooth transitions",
+      "Clean"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Color-only indicators"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 112,
+    "industry": "Expense Splitter / Bill Split",
+    "pattern": "Minimal & Direct + Demo",
+    "style_priority": [
+      "Flat Design",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Success green + alert red + neutral grey + avatar accent colors",
+    "typography_mood": "Bold + Clean + Sans-serif",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Complex shadows",
+      "3D effects",
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 113,
+    "industry": "Voice Recorder & Memo",
+    "pattern": "Interactive Product Demo + Minimal",
+    "style_priority": [
+      "Minimalism",
+      "AI-Native UI"
+    ],
+    "color_mood": "Clean white + recording red + waveform accent",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle hover 200ms",
+      "Smooth transitions",
+      "Clean"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 114,
+    "industry": "Bookmark & Read-Later",
+    "pattern": "Minimal & Direct + Demo",
+    "style_priority": [
+      "Minimalism",
+      "Flat Design"
+    ],
+    "color_mood": "Paper warm white + ink neutral + minimal accent + tag colors",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 115,
+    "industry": "Translator App",
+    "pattern": "Feature-Rich Showcase + Interactive Demo",
+    "style_priority": [
+      "Flat Design",
+      "AI-Native UI"
+    ],
+    "color_mood": "Global blue + neutral grey + language flag accent",
+    "typography_mood": "Bold + Clean + Sans-serif",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 116,
+    "industry": "Calculator & Unit Converter",
+    "pattern": "Minimal & Direct",
+    "style_priority": [
+      "Neumorphism",
+      "Minimalism"
+    ],
+    "color_mood": "Dark functional + orange operation keys + clear button hierarchy",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Dual shadows (light",
+      "dark)",
+      "Soft press 150ms"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 117,
+    "industry": "Alarm & World Clock",
+    "pattern": "Minimal & Direct",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Minimalism"
+    ],
+    "color_mood": "Deep dark + ambient glow accent + timezone gradient",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle glow",
+      "Neon accents",
+      "High contrast"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Pure white backgrounds"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 118,
+    "industry": "File Manager & Transfer",
+    "pattern": "Feature-Rich Showcase + Demo",
+    "style_priority": [
+      "Flat Design",
+      "Minimalism"
+    ],
+    "color_mood": "Functional neutral + file type color coding (PDF orange, doc blue, image purple)",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 119,
+    "industry": "Email Client",
+    "pattern": "Feature-Rich Showcase + Demo",
+    "style_priority": [
+      "Flat Design",
+      "Minimalism"
+    ],
+    "color_mood": "Clean white + brand primary + priority red + snooze amber",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 120,
+    "industry": "Casual Puzzle Game",
+    "pattern": "Feature-Rich Showcase + Social Proof",
+    "style_priority": [
+      "Claymorphism",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Cheerful pastels + progression gradient + reward gold + bright accent",
+    "typography_mood": "Playful + Rounded + Friendly",
+    "effects": [
+      "Multi-layer shadows",
+      "Spring bounce",
+      "Soft press 200ms"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 121,
+    "industry": "Trivia & Quiz Game",
+    "pattern": "Feature-Rich Showcase + Social Proof",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Micro-interactions"
+    ],
+    "color_mood": "Energetic blue + correct green + incorrect red + leaderboard gold",
+    "typography_mood": "Energetic + Bold + Large",
+    "effects": [
+      "Haptic feedback",
+      "Small 50-100ms animations"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 122,
+    "industry": "Card & Board Game",
+    "pattern": "Feature-Rich Showcase",
+    "style_priority": [
+      "3D & Hyperrealism",
+      "Flat Design"
+    ],
+    "color_mood": "Game-theme felt green + dark wood + card back patterns",
+    "typography_mood": "Bold + Clean + Sans-serif",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 123,
+    "industry": "Idle & Clicker Game",
+    "pattern": "Feature-Rich Showcase",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Motion-Driven"
+    ],
+    "color_mood": "Coin gold + upgrade blue + prestige purple + progress green",
+    "typography_mood": "Energetic + Bold + Large",
+    "effects": [
+      "Scroll animations",
+      "Parallax",
+      "Page transitions"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 124,
+    "industry": "Word & Crossword Game",
+    "pattern": "Minimal & Direct + Demo",
+    "style_priority": [
+      "Minimalism",
+      "Flat Design"
+    ],
+    "color_mood": "Clean white + warm letter tiles + success green + shake red",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 125,
+    "industry": "Arcade & Retro Game",
+    "pattern": "Feature-Rich Showcase + Hero-Centric",
+    "style_priority": [
+      "Pixel Art",
+      "Retro-Futurism"
+    ],
+    "color_mood": "Neon on black + pixel palette + score gold + danger red",
+    "typography_mood": "Nostalgic + Monospace + Neon",
+    "effects": [
+      "Subtle hover (200ms)",
+      "Smooth transitions"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Inconsistent styling",
+      "Poor contrast ratios"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 126,
+    "industry": "Photo Editor & Filters",
+    "pattern": "Feature-Rich Showcase + Interactive Demo",
+    "style_priority": [
+      "Minimalism",
+      "Dark Mode (OLED)"
+    ],
+    "color_mood": "Dark editor background + vibrant filter preview strip + tool icon accent",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle glow",
+      "Neon accents",
+      "High contrast"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Pure white backgrounds"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 127,
+    "industry": "Short Video Editor",
+    "pattern": "Feature-Rich Showcase + Hero-Centric",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Motion-Driven"
+    ],
+    "color_mood": "Dark background + timeline track accent colors + effect preview vivid",
+    "typography_mood": "High contrast + Light on dark",
+    "effects": [
+      "Subtle glow",
+      "Neon accents",
+      "High contrast"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle"
+    },
+    "anti_patterns": [
+      "Pure white backgrounds"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 128,
+    "industry": "Drawing & Sketching Canvas",
+    "pattern": "Interactive Product Demo + Storytelling",
+    "style_priority": [
+      "Minimalism",
+      "Dark Mode (OLED)"
+    ],
+    "color_mood": "Neutral canvas + full-spectrum color picker + tool panel dark",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle glow",
+      "Neon accents",
+      "High contrast"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Pure white backgrounds"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 129,
+    "industry": "Music Creation & Beat Maker",
+    "pattern": "Interactive Product Demo + Storytelling",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Motion-Driven"
+    ],
+    "color_mood": "Dark studio background + track colors rainbow + waveform accent + BPM pulse",
+    "typography_mood": "High contrast + Light on dark",
+    "effects": [
+      "Subtle glow",
+      "Neon accents",
+      "High contrast"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle"
+    },
+    "anti_patterns": [
+      "Pure white backgrounds"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 130,
+    "industry": "Meme & Sticker Maker",
+    "pattern": "Feature-Rich Showcase + Social Proof",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Flat Design"
+    ],
+    "color_mood": "Bold primary + comedic yellow + viral red + high saturation accent",
+    "typography_mood": "Bold + Clean + Sans-serif",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Complex shadows",
+      "3D effects",
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 131,
+    "industry": "AI Photo & Avatar Generator",
+    "pattern": "Feature-Rich Showcase + Social Proof",
+    "style_priority": [
+      "AI-Native UI",
+      "Aurora UI"
+    ],
+    "color_mood": "AI purple + aurora gradients + before/after neutral",
+    "typography_mood": "Elegant + Gradient-friendly",
+    "effects": [
+      "Flowing gradients 8-12s",
+      "Color morphing"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Inconsistent styling",
+      "Poor contrast ratios"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 132,
+    "industry": "Link-in-Bio Page Builder",
+    "pattern": "Conversion-Optimized + Social Proof",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Bento Box Grid"
+    ],
+    "color_mood": "Brand-customizable + accent link color + clean white canvas",
+    "typography_mood": "Energetic + Bold + Large",
+    "effects": [
+      "Large section gaps 48px",
+      "",
+      "Color shift hover",
+      "Scroll-snap"
+    ],
+    "decision_rules": {
+      "if_conversion_focused": "add-urgency-colors",
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 133,
+    "industry": "Wardrobe & Outfit Planner",
+    "pattern": "Storytelling-Driven + Feature-Rich",
+    "style_priority": [
+      "Minimalism",
+      "Motion-Driven"
+    ],
+    "color_mood": "Clean fashion neutral + full clothes color palette + accent",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle hover 200ms",
+      "Smooth transitions",
+      "Clean"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 134,
+    "industry": "Plant Care Tracker",
+    "pattern": "Storytelling-Driven + Social Proof",
+    "style_priority": [
+      "Organic Biophilic",
+      "Soft UI Evolution"
+    ],
+    "color_mood": "Nature greens + earth brown + sunny yellow reminder + water blue",
+    "typography_mood": "Warm + Humanist + Natural",
+    "effects": [
+      "Rounded 16-24px",
+      "Natural shadows",
+      "Flowing SVG"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Inconsistent styling",
+      "Poor contrast ratios"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 135,
+    "industry": "Book & Reading Tracker",
+    "pattern": "Social Proof-Focused + Feature-Rich",
+    "style_priority": [
+      "Swiss Modernism 2.0",
+      "Minimalism"
+    ],
+    "color_mood": "Warm paper white + ink brown + reading progress green + book cover colors",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle hover 200ms",
+      "Smooth transitions",
+      "Clean"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Excessive decoration"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 136,
+    "industry": "Couple & Relationship App",
+    "pattern": "Storytelling-Driven + Social Proof",
+    "style_priority": [
+      "Aurora UI",
+      "Soft UI Evolution"
+    ],
+    "color_mood": "Warm romantic pink/rose + soft gradient + memory photo tones",
+    "typography_mood": "Elegant + Gradient-friendly",
+    "effects": [
+      "Flowing gradients 8-12s",
+      "Color morphing"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Inconsistent styling",
+      "Poor contrast ratios"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 137,
+    "industry": "Family Calendar & Chores",
+    "pattern": "Feature-Rich Showcase + Social Proof",
+    "style_priority": [
+      "Flat Design",
+      "Claymorphism"
+    ],
+    "color_mood": "Warm playful + member color coding + chore completion green",
+    "typography_mood": "Playful + Rounded + Friendly",
+    "effects": [
+      "Multi-layer shadows",
+      "Spring bounce",
+      "Soft press 200ms"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Complex shadows",
+      "3D effects"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 138,
+    "industry": "Mood Tracker",
+    "pattern": "Storytelling-Driven + Social Proof",
+    "style_priority": [
+      "Soft UI Evolution",
+      "Minimalism"
+    ],
+    "color_mood": "Emotion gradient (blue sad to yellow happy) + pastel per mood + insight accent",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle hover 200ms",
+      "Smooth transitions",
+      "Clean"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Excessive decoration"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 139,
+    "industry": "Gift & Wishlist",
+    "pattern": "Minimal & Direct + Conversion",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Soft UI Evolution"
+    ],
+    "color_mood": "Celebration warm pink/gold/red + category colors + surprise accent",
+    "typography_mood": "Energetic + Bold + Large",
+    "effects": [
+      "Large section gaps 48px",
+      "",
+      "Color shift hover",
+      "Scroll-snap"
+    ],
+    "decision_rules": {
+      "if_conversion_focused": "add-urgency-colors"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 140,
+    "industry": "Running & Cycling GPS",
+    "pattern": "Feature-Rich Showcase + Social Proof",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Energetic orange + map accent + pace zones (green/yellow/red)",
+    "typography_mood": "High contrast + Light on dark",
+    "effects": [
+      "Subtle glow",
+      "Neon accents",
+      "High contrast"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle",
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Pure white backgrounds",
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 141,
+    "industry": "Yoga & Stretching Guide",
+    "pattern": "Storytelling-Driven + Social Proof",
+    "style_priority": [
+      "Organic Biophilic",
+      "Soft UI Evolution"
+    ],
+    "color_mood": "Earth calming sage/terracotta/cream + breathing gradient + warm accent",
+    "typography_mood": "Warm + Humanist + Natural",
+    "effects": [
+      "Rounded 16-24px",
+      "Natural shadows",
+      "Flowing SVG"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Inconsistent styling",
+      "Poor contrast ratios"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 142,
+    "industry": "Sleep Tracker",
+    "pattern": "Feature-Rich Showcase + Social Proof",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Neumorphism"
+    ],
+    "color_mood": "Deep midnight blue + stars/moon accent + sleep quality gradient (poor red to great green)",
+    "typography_mood": "High contrast + Light on dark",
+    "effects": [
+      "Dual shadows (light",
+      "dark)",
+      "Soft press 150ms"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle",
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Pure white backgrounds"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 143,
+    "industry": "Calorie & Nutrition Counter",
+    "pattern": "Feature-Rich Showcase + Social Proof",
+    "style_priority": [
+      "Flat Design",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Healthy green + macro colors (protein blue, carb orange, fat yellow) + progress circle",
+    "typography_mood": "Bold + Clean + Sans-serif",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Complex shadows",
+      "3D effects",
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 144,
+    "industry": "Period & Cycle Tracker",
+    "pattern": "Social Proof-Focused + Trust",
+    "style_priority": [
+      "Soft UI Evolution",
+      "Aurora UI"
+    ],
+    "color_mood": "Rose/blush + lavender + fertility green + soft calendar tones",
+    "typography_mood": "Elegant + Gradient-friendly",
+    "effects": [
+      "Flowing gradients 8-12s",
+      "Color morphing"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Inconsistent styling",
+      "Poor contrast ratios"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 145,
+    "industry": "Medication & Pill Reminder",
+    "pattern": "Trust & Authority + Feature-Rich",
+    "style_priority": [
+      "Accessible & Ethical",
+      "Flat Design"
+    ],
+    "color_mood": "Medical trust blue + missed alert red + taken green + clean white",
+    "typography_mood": "Bold + Clean + Sans-serif",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Complex shadows",
+      "3D effects",
+      "Color-only indicators"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 146,
+    "industry": "Water & Hydration Reminder",
+    "pattern": "Minimal & Direct + Demo",
+    "style_priority": [
+      "Claymorphism",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Refreshing blue + water wave animation + goal progress accent",
+    "typography_mood": "Playful + Rounded + Friendly",
+    "effects": [
+      "Multi-layer shadows",
+      "Spring bounce",
+      "Soft press 200ms"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 147,
+    "industry": "Fasting & Intermittent Timer",
+    "pattern": "Feature-Rich Showcase + Social Proof",
+    "style_priority": [
+      "Minimalism",
+      "Dark Mode (OLED)"
+    ],
+    "color_mood": "Fasting deep blue/purple + eating window green + timeline neutral",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle glow",
+      "Neon accents",
+      "High contrast"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle",
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Pure white backgrounds"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 148,
+    "industry": "Anonymous Community / Confession",
+    "pattern": "Social Proof-Focused + Feature-Rich",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Minimalism"
+    ],
+    "color_mood": "Dark protective + subtle gradient + upvote green + empathy warm accent",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle glow",
+      "Neon accents",
+      "High contrast"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle",
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Pure white backgrounds"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 149,
+    "industry": "Local Events & Discovery",
+    "pattern": "Hero-Centric Design + Feature-Rich",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Motion-Driven"
+    ],
+    "color_mood": "City vibrant + event category colors + map accent + date highlight",
+    "typography_mood": "Energetic + Bold + Large",
+    "effects": [
+      "Scroll animations",
+      "Parallax",
+      "Page transitions"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 150,
+    "industry": "Study Together / Virtual Coworking",
+    "pattern": "Social Proof-Focused + Feature-Rich",
+    "style_priority": [
+      "Minimalism",
+      "Soft UI Evolution"
+    ],
+    "color_mood": "Calm focus blue + session progress indicator + ambient warm neutrals",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle hover 200ms",
+      "Smooth transitions",
+      "Clean"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Excessive decoration"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 151,
+    "industry": "Coding Challenge & Practice",
+    "pattern": "Feature-Rich Showcase + Social Proof",
+    "style_priority": [
+      "Dark Mode (OLED)",
+      "Cyberpunk UI"
+    ],
+    "color_mood": "Code editor dark + success green + difficulty gradient (easy green / medium amber / hard red)",
+    "typography_mood": "High contrast + Light on dark",
+    "effects": [
+      "Subtle glow",
+      "Neon accents",
+      "High contrast"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle",
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Pure white backgrounds"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 152,
+    "industry": "Kids Learning (ABC & Math)",
+    "pattern": "Social Proof-Focused + Trust",
+    "style_priority": [
+      "Claymorphism",
+      "Vibrant & Block-based"
+    ],
+    "color_mood": "Bright primary + child-safe pastels + reward gold + interactive accent",
+    "typography_mood": "Playful + Rounded + Friendly",
+    "effects": [
+      "Multi-layer shadows",
+      "Spring bounce",
+      "Soft press 200ms"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 153,
+    "industry": "Music Instrument Learning",
+    "pattern": "Interactive Product Demo + Social Proof",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Motion-Driven"
+    ],
+    "color_mood": "Musical warm deep red/brown + note color system + skill progress bar",
+    "typography_mood": "Energetic + Bold + Large",
+    "effects": [
+      "Scroll animations",
+      "Parallax",
+      "Page transitions"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 154,
+    "industry": "Parking Finder",
+    "pattern": "Conversion-Optimized + Feature-Rich",
+    "style_priority": [
+      "Minimalism",
+      "Glassmorphism"
+    ],
+    "color_mood": "Trust blue + available green + occupied red + map neutral",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Backdrop blur (10-20px)",
+      "Translucent overlays"
+    ],
+    "decision_rules": {
+      "if_low_performance": "fallback-to-flat",
+      "if_conversion_focused": "add-urgency-colors"
+    },
+    "anti_patterns": [
+      "Excessive decoration"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 155,
+    "industry": "Public Transit Guide",
+    "pattern": "Feature-Rich Showcase + Interactive Demo",
+    "style_priority": [
+      "Flat Design",
+      "Accessible & Ethical"
+    ],
+    "color_mood": "Transit brand line colors + real-time indicator green/red + map neutral",
+    "typography_mood": "Bold + Clean + Sans-serif",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Complex shadows",
+      "3D effects",
+      "Color-only indicators"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 156,
+    "industry": "Road Trip Planner",
+    "pattern": "Storytelling-Driven + Hero-Centric",
+    "style_priority": [
+      "Aurora UI",
+      "Organic Biophilic"
+    ],
+    "color_mood": "Adventure warm sunset orange + map teal + stop markers + road neutral",
+    "typography_mood": "Elegant + Gradient-friendly",
+    "effects": [
+      "Flowing gradients 8-12s",
+      "Color morphing"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Inconsistent styling",
+      "Poor contrast ratios"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 157,
+    "industry": "VPN & Privacy Tool",
+    "pattern": "Trust & Authority + Conversion-Optimized",
+    "style_priority": [
+      "Minimalism",
+      "Dark Mode (OLED)"
+    ],
+    "color_mood": "Dark shield blue + connected green + disconnected red + trust accent",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle glow",
+      "Neon accents",
+      "High contrast"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle",
+      "if_conversion_focused": "add-urgency-colors"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Pure white backgrounds"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 158,
+    "industry": "Emergency SOS & Safety",
+    "pattern": "Trust & Authority + Social Proof",
+    "style_priority": [
+      "Accessible & Ethical",
+      "Flat Design"
+    ],
+    "color_mood": "Alert red + safety blue + location green + high contrast critical",
+    "typography_mood": "Bold + Clean + Sans-serif",
+    "effects": [
+      "Color shift hover",
+      "Fast 150ms transitions",
+      "No shadows"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Complex shadows",
+      "3D effects",
+      "Color-only indicators"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 159,
+    "industry": "Wallpaper & Theme App",
+    "pattern": "Feature-Rich Showcase + Social Proof",
+    "style_priority": [
+      "Vibrant & Block-based",
+      "Aurora UI"
+    ],
+    "color_mood": "Content-driven + trending aesthetic palettes + download accent",
+    "typography_mood": "Energetic + Bold + Large",
+    "effects": [
+      "Large section gaps 48px",
+      "",
+      "Color shift hover",
+      "Scroll-snap"
+    ],
+    "decision_rules": {
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Muted colors",
+      "Low energy"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 160,
+    "industry": "White Noise & Ambient Sound",
+    "pattern": "Minimal & Direct + Social Proof",
+    "style_priority": [
+      "Minimalism",
+      "Dark Mode (OLED)"
+    ],
+    "color_mood": "Calming dark + ambient texture visual + subtle sound wave + sleep blue",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle glow",
+      "Neon accents",
+      "High contrast"
+    ],
+    "decision_rules": {
+      "if_light_mode_needed": "provide-theme-toggle",
+      "if_trust_needed": "add-testimonials"
+    },
+    "anti_patterns": [
+      "Excessive decoration",
+      "Pure white backgrounds"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  },
+  {
+    "id": 161,
+    "industry": "Home Decoration & Interior Design",
+    "pattern": "Storytelling-Driven + Feature-Rich",
+    "style_priority": [
+      "Minimalism",
+      "3D Product Preview"
+    ],
+    "color_mood": "Neutral interior palette + material texture accent + AR blue",
+    "typography_mood": "Professional + Clean hierarchy",
+    "effects": [
+      "Subtle hover 200ms",
+      "Smooth transitions",
+      "Clean"
+    ],
+    "decision_rules": {
+      "if_ux_focused": "prioritize-clarity",
+      "if_mobile": "optimize-touch-targets"
+    },
+    "anti_patterns": [
+      "Excessive decoration"
+    ],
+    "severity": "HIGH",
+    "source": "ui-ux-pro-max"
+  }
+]
