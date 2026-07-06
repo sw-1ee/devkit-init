@@ -19,6 +19,7 @@
       "core/hooks/session-start-recover.sh",
       "core/hooks/session-end-reminder.sh",
       "core/scripts/extract-session.sh",
+      "core/scripts/stitch-timeline.py",
       "core/agents/verifier.md",
       "core/MEMORY.md.template"
     ]

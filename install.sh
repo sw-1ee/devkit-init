@@ -119,6 +119,7 @@ for f in auto-extract-session.sh session-start-recover.sh session-end-reminder.s
   install_file "$KIT_DIR/core/hooks/$f" "$TARGET/.claude/hooks/$f" 1
 done
 install_file "$KIT_DIR/core/scripts/extract-session.sh" "$TARGET/scripts/extract-session.sh" 1
+install_file "$KIT_DIR/core/scripts/stitch-timeline.py" "$TARGET/scripts/stitch-timeline.py" 1
 install_file "$KIT_DIR/core/agents/verifier.md" "$TARGET/.claude/agents/verifier.md"
 install_file "$KIT_DIR/mcp/.mcp.json.template" "$TARGET/.mcp.json.template"
 

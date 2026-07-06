@@ -7,6 +7,9 @@ set +e
 PROJ_DIR="${CLAUDE_PROJECT_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)}"
 cd "$PROJ_DIR" || exit 0
 
+# timeline 재병합 — 크래시로 마지막 Stop stitch 누락됐어도 세션 시작 시 복구
+python3 "$PROJ_DIR/scripts/stitch-timeline.py" >/dev/null 2>&1
+
 # 현재 session_id (자기 자신 skip)
 current=$(python3 -c "import sys,json
 try:

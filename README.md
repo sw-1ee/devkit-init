@@ -31,8 +31,11 @@ target/
 ├── CLAUDE.md              # core 차터 + domain 차터 + mode 규칙 조립
 ├── MEMORY.md              # 세션 간 기억 색인
 ├── .mcp.json.template     # MCP 등록 템플릿 (v1 서버 미번들)
-├── scripts/extract-session.sh
-├── .agents/sessions/      # 대화 로그 (hook 자동 생성)
+├── scripts/extract-session.sh + stitch-timeline.py
+├── .agents/sessions/      # 대화 로그 — 서버에 전역 허브(/mnt/volumes/sessions)가
+│                          #   있으면 자동 심링크(프로젝트별 식별), 없으면 로컬.
+│                          #   timeline.md = 전 세션 발화 시간순 연속 통합본
+│                          #   (터미널 바뀌어도 대화 흐름 이어짐, 크래시도 recover가 복구)
 └── .claude/
     ├── settings.json      # hooks 배선 (기존 파일엔 idempotent merge)
     ├── hooks/             # 세션 연속성 3계층 (Stop/SessionStart/UserPromptSubmit)
