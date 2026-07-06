@@ -21,6 +21,7 @@
       "core/scripts/extract-session.sh",
       "core/scripts/stitch-timeline.py",
       "core/scripts/adopt-sessions-hub.sh",
+      "core/scripts/session-hub.sh",
       "core/agents/verifier.md",
       "core/MEMORY.md.template"
     ]
