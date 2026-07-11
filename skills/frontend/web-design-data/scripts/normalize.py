@@ -56,7 +56,7 @@ def do_design_rules():
         "source": "ui-ux-pro-max",
     } for r in rows]
     (out / "industry-rules.json").write_text(
-        json.dumps(rules, indent=2, ensure_ascii=False))
+        json.dumps(rules, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"  design-rules/industry-rules.json: {len(rules)}")
 
     # palettes.json ← colors.csv (shadcn 토큰 세트)
@@ -70,7 +70,7 @@ def do_design_rules():
         "source": "ui-ux-pro-max",
     } for r in rows]
     (out / "palettes.json").write_text(
-        json.dumps(palettes, indent=2, ensure_ascii=False))
+        json.dumps(palettes, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"  design-rules/palettes.json: {len(palettes)} (tokens/row: {len(token_cols)})")
 
     # 나머지 4종은 컬럼 그대로 JSON 화 (스키마 소스별 상이 — 원형 유지가 정직)
@@ -79,7 +79,7 @@ def do_design_rules():
         data = [{norm_key(k): v for k, v in r.items()} | {"source": "ui-ux-pro-max"}
                 for r in rows]
         (out / f"{name}.json").write_text(
-            json.dumps(data, indent=2, ensure_ascii=False))
+            json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
         print(f"  design-rules/{name}.json: {len(data)}")
 
 
@@ -100,7 +100,7 @@ def do_design_systems():
         index.append({"slug": d.name, "title": title,
                       "file": f"design-systems/{d.name}/DESIGN.md",
                       "source": "VoltAgent/awesome-design-md"})
-    (out / "index.json").write_text(json.dumps(index, indent=2, ensure_ascii=False))
+    (out / "index.json").write_text(json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"  design-systems: {len(index)} brands + index.json")
 
 
@@ -115,7 +115,7 @@ def do_anti_slop():
     rules = json.loads(res.stdout)
     for r in rules:
         r["source"] = "pbakaus/impeccable"
-    (out / "rules.json").write_text(json.dumps(rules, indent=2, ensure_ascii=False))
+    (out / "rules.json").write_text(json.dumps(rules, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"  anti-slop/rules.json: {len(rules)}")
 
     # hallmark: 원본 보존 (20테마+게이트 = 프로즈. 브리틀한 파싱 대신 원문 참조)
