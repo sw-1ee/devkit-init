@@ -1,6 +1,6 @@
 {
   "name": "devkit-init",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Universal dev-environment bootstrap pack. Drop into an empty directory (or curl install.sh) to stand up a domain-tuned, mode-tuned Claude Code workspace with session continuity.",
   "entry_points": {
     "bash": "install.sh",
