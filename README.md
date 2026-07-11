@@ -33,19 +33,22 @@ bash pack/install.sh ~/my-project --domain web --stage pre-pmf
 | 인자 | 뜻 | 값 |
 |---|---|---|
 | `<target>` | 설치할 프로젝트 디렉토리 | 경로. 없으면 새로 만들고, 생략하면 현재 위치를 씁니다 |
-| `--domain` | 무엇을 만드는지 | web / ai / mobile / cli / data / `_generic` |
+| `--domain` | 무엇을 만드는지 | web / ai / mobile / cli / data / desktop / `_generic` |
 | `--stage` | 제품 성숙도 (mode 프리셋) | pre-pmf / growing / mature |
 | `--mode` | 단일 원형 (`--stage` 대신) | prototyper / builder / sweeper / grower / maintainer |
 | `--lang` | 하네스 팀 언어 | ko (기본) / en |
 | `--force` | 기존 CLAUDE.md가 있어도 진행 | 플래그 |
+| `--update` | 기존 설치의 팩 소유 런타임(hooks/scripts/verifier)만 새 버전으로 갱신 | 플래그 |
 
 인자를 생략하면 도메인과 단계를 대화형으로 물어봅니다.
+
+Windows에서는 Git Bash에서 실행합니다. python3(또는 python)가 PATH에 있어야 하고, 세션 허브 연결은 심링크 대신 NTFS 정션으로 만들어집니다. 설치 경로에 공백이나 한글이 있어도 동작합니다.
 
 ### 실행하면 일어나는 일
 
 1. **팩 무결성 검사** — `core`·`domains`·`modes`·`skills`·`mcp`가 모두 있는지 확인합니다. 부분 추출이면 여기서 멈춥니다.
 2. **core 설치** — 세션 연속성 엔진(hooks, extract-session, verifier, 차터 템플릿)을 깝니다.
-3. **domain seed** — 선택한 도메인의 하네스 팀 5개 역할을 `.claude/agents/`에 펼칩니다.
+3. **domain seed** — 선택한 도메인의 하네스 팀 역할들을 `.claude/agents/`에 펼칩니다.
 4. **mode 프로파일** — 원형 규칙을 CLAUDE.md에 넣고, 그 원형이 쓰는 스킬 카테고리만 설치합니다.
 5. **조립** — CLAUDE.md를 core + domain + mode로 합치고, settings.json의 hooks를 병합합니다.
 
@@ -59,7 +62,7 @@ bash pack/install.sh ~/my-project --domain web --stage pre-pmf
 
 | 축 | 질문 | 선택지 |
 |---|---|---|
-| **domain** | 무엇을 만드는지 (스택) | web / ai / mobile / cli / data / `_generic` |
+| **domain** | 무엇을 만드는지 (스택) | web / ai / mobile / cli / data / desktop / `_generic` |
 | **mode** | 어떻게 일하는지 (원형) | prototyper / builder / sweeper / grower / maintainer |
 | **stage** | (mode 프리셋) 제품 성숙도 | pre-pmf(1+2+3) / growing(2+3+4+5) / mature(3+4+5+2) |
 
@@ -73,7 +76,7 @@ target/
 ├── MEMORY.md              # 세션 간 기억 색인
 ├── .mcp.json.template     # MCP 등록 템플릿 (v1 서버 미번들)
 ├── scripts/extract-session.sh + stitch-timeline.py
-├── .agents/sessions/      # → 세션 허브 심링크 (허브는 항상 존재, 경로 하드코딩 없음)
+├── .agents/sessions/      # → 세션 허브 링크 (Linux/macOS=심링크, Windows=NTFS 정션)
 │                          #   해석: env DEVKIT_SESSIONS_HUB > ~/.claude/devkit.json
 │                          #         > 기본 ~/.claude/sessions-hub (자동 생성)
 │                          #   timeline.md = 전 세션 발화 시간순 연속 통합본
@@ -88,13 +91,21 @@ target/
 
 이 팩의 중심은 세션 연속성입니다. Claude Code가 남기는 JSONL을 ground truth로 삼아 conversation_log.md를 자동으로 파생하고, 끊긴 세션은 다음 시작 때 복구하며, 마무리 시점에는 체크리스트를 띄웁니다. 도메인 팀과 원형 프로파일은 그 위에 얹힙니다.
 
-## 아직 안 되는 것 (v1)
+## 아직 안 되는 것
 
-desktop/exe·Flutter·iOS 전용 팀은 아직 없어서 당분간 `_generic` fallback이 대신합니다. run.sh 자율 루프는 신뢰성이 검증될 때까지 뺐고, MCP 서버도 빈 템플릿만 넣었습니다. 세션 중 mode 전환은 v1.5에서 다룰 예정입니다.
+Flutter·iOS 전용 팀은 아직 없어서 당분간 `_generic` fallback이 대신합니다. run.sh 자율 루프는 신뢰성이 검증될 때까지 뺐고, MCP 서버도 빈 템플릿만 넣었습니다. 세션 중 mode 전환은 이후 버전에서 다룰 예정입니다.
 
 ## 재실행해도 안전합니다
 
 installer는 idempotent합니다. 이미 있는 파일은 `[skip]`으로 건너뛰고, settings hooks는 command 문자열을 비교해 중복 없이 병합합니다. 다른 domain이나 mode로 다시 실행하면 새 파일만 추가됩니다.
+
+## 기존 설치 업그레이드
+
+새 버전의 팩을 받은 뒤 `--update`로 실행하면 팩 소유 런타임(hooks 3종, scripts 4종, verifier)만 새 버전으로 교체합니다. 내용이 같으면 건너뛰고, 다르면 기존 파일을 `.bak`으로 남긴 뒤 갱신합니다. 직접 작성하신 CLAUDE.md·MEMORY.md·도메인 에이전트·스킬은 건드리지 않으며, settings.json의 hook 명령은 구버전 문자열을 자동으로 새 버전으로 교체합니다.
+
+```bash
+bash devkit/install.sh ~/my-project --update
+```
 
 ## 라이선스
 

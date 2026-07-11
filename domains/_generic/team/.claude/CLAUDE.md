@@ -1,6 +1,6 @@
 # Generic Team Harness
 
-전용 하네스 팀이 없는 도메인(desktop/exe, Flutter, iOS 네이티브 등)을 위한
+전용 하네스 팀이 없는 도메인(Flutter, iOS 네이티브 등)을 위한
 최소 3역할 fallback. 도메인 특화 지식은 없지만, 설계→구현→검증의 기본
 분업은 그대로 동작한다.
 
@@ -21,6 +21,6 @@
 
 ## 한계 (정직 고지)
 
-이 팀은 범용이다. 도메인 전용 팀(웹/AI/모바일/CLI/데이터)이 있으면 그쪽이
-항상 낫다: `bash install.sh --domain <web|ai|mobile|cli|data>`.
-desktop/exe·Flutter·iOS 전용 팀은 콘텐츠 백로그 — 추가되면 이 fallback 을 대체한다.
+이 팀은 범용이다. 도메인 전용 팀(웹/AI/모바일/CLI/데이터/데스크톱)이 있으면
+그쪽이 항상 낫다: `bash install.sh --domain <web|ai|mobile|cli|data|desktop>`.
+Flutter·iOS 전용 팀은 콘텐츠 백로그 — 추가되면 이 fallback 을 대체한다.

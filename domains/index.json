@@ -32,11 +32,17 @@
       "description": "데이터 파이프라인: 수집→변환→적재→검증→모니터링.",
       "optional_teams": ["32-data-analysis"]
     },
+    "desktop": {
+      "team": "desktop",
+      "title": "Desktop App",
+      "description": "데스크톱 앱: 스택 무관(Electron/.NET/Tauri/Qt/Flutter-desktop 어댑터) — 설계→구현→멀티 OS 검증→패키징·코드사이닝·자동업데이트.",
+      "roles": ["architect", "desktop-dev", "qa", "release-engineer"]
+    },
     "_generic": {
       "team": "_generic",
       "title": "Generic (fallback)",
-      "description": "최소 3역할 (architect/developer/qa). desktop/exe, Flutter, iOS 등 전용 팀이 없는 도메인의 정직한 fallback.",
-      "covers_gaps": ["desktop-exe", "flutter", "ios-native", "windows"]
+      "description": "최소 3역할 (architect/developer/qa). Flutter, iOS 네이티브 등 전용 팀이 없는 도메인의 정직한 fallback.",
+      "covers_gaps": ["flutter", "ios-native"]
     }
   }
 }
