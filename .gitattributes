@@ -1,0 +1,11 @@
+# devkit-init 은 bash/python 스크립트 팩 — Windows 의 core.autocrlf=true 로
+# 클론되면 CRLF 체크아웃으로 install.sh 가 1행부터 실행 불가.
+# 전 텍스트 파일을 LF 로 강제한다.
+* text=auto eol=lf
+*.sh       text eol=lf
+*.py       text eol=lf
+*.json     text eol=lf
+*.fragment text eol=lf
+*.template text eol=lf
+*.md       text eol=lf
+*.list     text eol=lf
