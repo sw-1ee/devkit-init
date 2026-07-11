@@ -2,10 +2,15 @@
 # UserPromptSubmit hook: wrap-up 신호 감지 시 세션 종료 체크리스트 컨텍스트 주입.
 # stdout 은 additionalContext 로 Claude 에 전달됨.
 
-json=$(cat)
-prompt=$(echo "$json" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('prompt',''))" 2>/dev/null)
+export PYTHONUTF8=1   # 한글 prompt 가 비-UTF8 로케일(cp949)에서 깨지면 감지 자체가 무력화됨
 
-if echo "$prompt" | grep -qiE '(끝\?|끝난겨|끝났|끝인가|완료\?|완료야|완료\?|다음\?|다음은|wrap|마무리|세션.?종료|저장해|정리해줘|이만)'; then
+PY="$(command -v python3 || command -v python)"
+[ -n "$PY" ] || exit 0
+
+json=$(cat)
+prompt=$(printf '%s' "$json" | "$PY" -c "import sys,json; d=json.load(sys.stdin); print(d.get('prompt',''))" 2>/dev/null)
+
+if echo "$prompt" | grep -qiE '(끝\?|끝난겨|끝났|끝인가|완료\?|완료야|다음\?|다음은|wrap|마무리|세션.?종료|저장해|정리해줘|이만)'; then
     cat <<'REMINDER'
 [SESSION-END CHECKLIST — 세션 종료 절차 강제 리마인더]
 사용자가 wrap-up 신호를 보냈다. 기능 답변만 하고 끝내지 말고, 아래 4단계 먼저 확인·실행:

@@ -8,14 +8,18 @@
 # 해석 순서: env DEVKIT_SESSIONS_HUB > ~/.claude/devkit.json sessions_hub
 #            > 기본 ~/.claude/sessions-hub
 set -euo pipefail
+export PYTHONUTF8=1
 
 CFG="$HOME/.claude/devkit.json"
+
+PY="$(command -v python3 || command -v python || true)"
+if [ -z "$PY" ]; then echo "ERROR: python3 (or python) not found on PATH" >&2; exit 1; fi
 
 resolve_hub() {
   if [ -n "${DEVKIT_SESSIONS_HUB:-}" ]; then echo "$DEVKIT_SESSIONS_HUB (source: env)"; return; fi
   if [ -f "$CFG" ]; then
     local hub
-    hub=$(python3 -c "import json,sys; print(json.load(open(sys.argv[1])).get('sessions_hub',''))" "$CFG" 2>/dev/null || true)
+    hub=$("$PY" -c "import json,sys; print(json.load(open(sys.argv[1], encoding='utf-8-sig')).get('sessions_hub',''))" "$CFG" 2>/dev/null || true)
     [ -n "$hub" ] && { echo "$hub (source: devkit.json)"; return; }
   fi
   echo "$HOME/.claude/sessions-hub (source: default)"
@@ -43,19 +47,21 @@ fi
 # ---- 설정 모드 ----
 NEW_HUB="$(mkdir -p "$1" && cd "$1" && pwd)"
 
-python3 - "$NEW_HUB" <<'PYEOF'
+"$PY" - "$NEW_HUB" <<'PYEOF'
 import json, os, sys
 cfg = os.path.expanduser("~/.claude/devkit.json")
 d = {}
 if os.path.exists(cfg):
     try:
-        d = json.load(open(cfg))
+        with open(cfg, encoding="utf-8-sig") as f:
+            d = json.load(f)
     except Exception:
         d = {}
 old = d.get("sessions_hub")
 d["sessions_hub"] = sys.argv[1]
 os.makedirs(os.path.dirname(cfg), exist_ok=True)
-json.dump(d, open(cfg, "w"), indent=2, ensure_ascii=False)
+with open(cfg, "w", encoding="utf-8") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
 print(f"서버 기본 허브 영속: {sys.argv[1]}")
 if old and old != sys.argv[1] and os.path.isdir(old):
     projs = [p for p in os.listdir(old) if os.path.isdir(os.path.join(old, p))]

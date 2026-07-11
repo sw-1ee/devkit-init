@@ -1,17 +1,41 @@
 #!/usr/bin/env bash
 # extract-session.sh — JSONL transcript → conversation_log.md
 # Usage: ./scripts/extract-session.sh [jsonl_path] [output_dir]
-#   jsonl_path: defaults to most recent JSONL in $HOME/.claude/projects/<sanitized>/
+#   jsonl_path: defaults to most recent JSONL in the project's Claude Code transcript dir
 #   output_dir: defaults to .agents/sessions/{auto-generated}/
 
 set -euo pipefail
+export PYTHONUTF8=1   # 비-UTF8 로케일(Windows cp949 등)에서 파일 인코딩 고정
 
 # Project root 자동 감지: CLAUDE_PROJECT_DIR 우선, 폴백은 스크립트 위치 기준.
 PROJ_DIR="${CLAUDE_PROJECT_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 
-# JSONL 디렉토리 = Claude Code 가 path 의 / → - sanitize 한 형태
-sanitized=$(echo "$PROJ_DIR" | sed 's|/|-|g')
-JSONL_DIR="$HOME/.claude/projects/${sanitized}"
+PY="$(command -v python3 || command -v python || true)"
+if [ -z "$PY" ]; then echo "ERROR: python3 (or python) not found on PATH" >&2; exit 1; fi
+
+# JSONL 디렉토리 추정 — Claude Code sanitize 룰 = 경로의 비영숫자 전부 '-'.
+# Windows(Git Bash)에선 같은 경로가 유닉스형(/c/...)과 네이티브형(C:/...) 둘로
+# 표현되고 HOME ≠ USERPROFILE 일 수 있어, 후보를 만들어 존재하는 것을 쓴다.
+find_jsonl_dir() {
+  local bases=("$HOME/.claude/projects") paths=("$PROJ_DIR") b p s d
+  if command -v cygpath >/dev/null 2>&1; then
+    if [ -n "${USERPROFILE:-}" ]; then
+      bases+=("$(cygpath -u "$USERPROFILE" 2>/dev/null || true)/.claude/projects")
+    fi
+    paths+=("$(cygpath -m "$PROJ_DIR" 2>/dev/null || true)")
+  fi
+  for b in "${bases[@]}"; do
+    for p in "${paths[@]}"; do
+      [ -n "$p" ] || continue
+      s=$(printf '%s' "$p" | sed 's/[^A-Za-z0-9]/-/g')
+      d="$b/$s"
+      if [ -d "$d" ]; then printf '%s' "$d"; return 0; fi
+    done
+  done
+  # 아무 후보도 없으면 1차 후보를 그대로 반환 (아래 에러 메시지용)
+  printf '%s' "${bases[0]}/$(printf '%s' "$PROJ_DIR" | sed 's/[^A-Za-z0-9]/-/g')"
+}
+JSONL_DIR="$(find_jsonl_dir)"
 
 jsonl_path="${1:-}"
 output_dir="${2:-}"
@@ -32,7 +56,7 @@ fi
 
 session_id="$(basename "$jsonl_path" .jsonl)"
 
-python3 - "$jsonl_path" "$output_dir" "$session_id" "$PROJ_DIR" << 'PYEOF'
+"$PY" - "$jsonl_path" "$output_dir" "$session_id" "$PROJ_DIR" << 'PYEOF'
 import json
 import sys
 from datetime import datetime, timezone, timedelta
